@@ -26,9 +26,10 @@ import { ValtioStore } from '../../ValtioStore'
 // Constants
 //
 const { QUESTIONS_DATA } = require('./QuizTestData.js')
-//.............................................................................
-//.  Data Input Fields
-//.............................................................................
+//
+//  Debug logging
+//
+const g_log1 = true
 //
 //  Initial Values
 //
@@ -60,14 +61,16 @@ function QuizTest() {
     //
     //  Update Store
     //
-    ValtioStore.v_Page = 'Quiz'
+    ValtioStore.v_TestData = true
+    ValtioStore.v_Page = 'QuizSelect'
     ValtioStore.v_Email = email
     ValtioStore.v_Name = name
     ValtioStore.v_Reset = true
     ValtioStore.v_Owner = 'TestOwner'
     ValtioStore.v_Group1 = 'TestGroup1'
     ValtioStore.v_Group2 = 'TestGroup2'
-    ValtioStore.v_Quest = QUESTIONS_DATA
+    ValtioStore.v_Data = QUESTIONS_DATA
+    if (g_log1) console.log(QUESTIONS_DATA)
   }
   //...................................................................................
   //.  Render the form

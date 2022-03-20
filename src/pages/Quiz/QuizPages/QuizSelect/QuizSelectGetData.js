@@ -3,6 +3,7 @@
 //
 import { ValtioStore } from '../../ValtioStore'
 import apiAxios from '../../../../services/apiAxios'
+import QuizRandomSort from '../../../../services/QuizRandomSort'
 //
 // Constants
 //
@@ -14,7 +15,7 @@ const { SQL_MAXROWS } = require('../../../../services/constants.js')
 //
 //  Debug logging
 //
-const g_log1 = false
+const g_log1 = true
 //===================================================================================
 async function QuizSelectGetData({ qowner, qgroup1, qgroup2 }) {
   //--------------------------------------------------------------------
@@ -54,13 +55,14 @@ async function QuizSelectGetData({ qowner, qgroup1, qgroup2 }) {
         throw Error('No data received')
       }
       //
-      //  Randomly sort questions
+      // update ValtioStore - Data
       //
-      const sortedData = randomSort(resultData)
-      if (g_log1) console.log(sortedData)
+      if (g_log1) console.log('update v_Data', resultData)
+      ValtioStore.v_Data = resultData
       //
       // update ValtioStore - Questions
       //
+      const sortedData = QuizRandomSort(resultData)
       if (g_log1) console.log('update v_Quest', sortedData)
       ValtioStore.v_Quest = sortedData
       //
@@ -76,47 +78,15 @@ async function QuizSelectGetData({ qowner, qgroup1, qgroup2 }) {
     }
   }
   //--------------------------------------------------------------------
-  //-  RandomSort
-  //--------------------------------------------------------------------
-  const randomSort = resultData => {
-    //
-    //  Load the workArray
-    //
-    let workArray = []
-    resultData.forEach(data => {
-      const ansObj = {
-        random: Math.random(),
-        details: data
-      }
-      workArray.push(ansObj)
-    })
-    //
-    //  Sort the workArray
-    //
-    workArray.sort((a, b) => (a.random > b.random ? 1 : -1))
-    if (g_log1) console.log(workArray)
-    //
-    //  Strip out the random element
-    //
-    const sortedArray = workArray.map(data => {
-      return data.details
-    })
-    //
-    //  Return sorted array
-    //
-    if (g_log1) console.log(sortedArray)
-    return sortedArray
-  }
-  //--------------------------------------------------------------------
   //-  Initial fetch of data
   //--------------------------------------------------------------------
   //
   // Clear the store
   //
+  if (g_log1) console.log('clear v_Data')
+  ValtioStore.v_Data = []
   if (g_log1) console.log('clear v_Quest')
   ValtioStore.v_Quest = []
-  if (g_log1) console.log('clear v_Ans')
-  ValtioStore.v_Ans = []
   //
   // Load the store
   //

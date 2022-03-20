@@ -33,7 +33,7 @@ import { ValtioStore } from '../../ValtioStore'
 const g_log1 = false
 //===================================================================================
 const QuizReview = () => {
-  if (g_log1) console.log('Start')
+  if (g_log1) console.log('Start QuizReview')
   //
   //  Define the State variables
   //
