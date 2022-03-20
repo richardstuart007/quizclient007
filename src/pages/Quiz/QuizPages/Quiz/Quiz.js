@@ -31,16 +31,19 @@ import { ValtioStore } from '../../ValtioStore'
 //
 //  Debug logging
 //
-const g_log1 = false
+const g_log1 = true
+//
+//  Global store variables
+//
+let g_Idx = 0
+let g_quizQuest = []
+let g_questCount = 0
+let g_quizRow = {}
 //===================================================================================
 const Quiz = () => {
   //
   //  Define the State variables
   //
-  const [rowIdx, setRowIdx] = useState(0)
-  const [quizRow, setQuizRow] = useState(null)
-  const [quizQuest, setQuizQuest] = useState([])
-  const [questCount, setQuestCount] = useState(0)
   const [ansPass, setAnsPass] = useState(0)
   const [ansCount, setAnsCount] = useState(0)
   //
@@ -59,6 +62,7 @@ const Quiz = () => {
     //
     //  Get store data & copy to State
     //
+    if (g_log1) console.log('snapShot.v_Quest ', snapShot.v_Quest)
     let quest = []
     snapShot.v_Quest.forEach(row => {
       const rowData = { ...row }
@@ -68,10 +72,13 @@ const Quiz = () => {
     //
     // Update Questions from Store
     //
-    setQuizQuest(quest)
-    setQuestCount(quest.length)
-    setQuizRow(quest[rowIdx])
-    setRowIdx(0)
+    g_quizQuest = quest
+    g_questCount = quest.length
+    g_Idx = 0
+    g_quizRow = g_quizQuest[g_Idx]
+    if (g_log1) console.log('g_quizQuest ', g_quizQuest)
+    if (g_log1) console.log('g_questCount ', g_questCount)
+    if (g_log1) console.log('g_quizRow ', g_quizRow)
     //
     // Update Answers
     //
@@ -86,7 +93,7 @@ const Quiz = () => {
     //
     //  Update count
     //
-    if (g_log1) console.log('rowIdx ', rowIdx, 'id ', id)
+    if (g_log1) console.log('g_Idx ', g_Idx, 'id ', id)
     if (id === 1) {
       const nextAnsPass = ansPass + 1
       setAnsPass(nextAnsPass)
@@ -94,15 +101,15 @@ const Quiz = () => {
     //
     //   Write Answers
     //
-    if (g_log1) console.log('rowIdx ', rowIdx, 'id ', id)
-    ValtioStore.v_Ans[rowIdx] = id
+    if (g_log1) console.log('g_Idx ', g_Idx, 'id ', id)
+    ValtioStore.v_Ans[g_Idx] = id
     const nextAnsCount = ansCount + 1
     setAnsCount(nextAnsCount)
     if (g_log1) console.log('nextAnsCount ', nextAnsCount)
     //
     //  End of data
     //
-    if (rowIdx + 1 >= questCount) {
+    if (g_Idx + 1 >= g_questCount) {
       if (g_log1) console.log('v_Ans', snapShot.v_Ans)
       ValtioStore.v_Page = 'QuizResults'
       return
@@ -110,17 +117,16 @@ const Quiz = () => {
     //
     //  Next row
     //
-    const nextRowIdx = rowIdx + 1
-    setRowIdx(nextRowIdx)
-    setQuizRow(quizQuest[nextRowIdx])
-    if (g_log1) console.log('rowIdx data', rowIdx, quizQuest[rowIdx])
+    g_Idx++
+    g_quizRow = g_quizQuest[g_Idx]
+    if (g_log1) console.log('g_quizRow', g_quizRow)
   }
   //...................................................................................
   //. Answer Selected
   //...................................................................................
   const handleSelect = id => {
     if (g_log1) console.log(`ID selected ${id}`)
-    if (g_log1) console.log('rowIdx ', rowIdx, 'qid ', quizRow.qid)
+    if (g_log1) console.log('g_Idx ', g_Idx, 'qid ', g_quizRow.qid)
     onSubmitForm(id)
   }
   //...................................................................................
@@ -132,16 +138,12 @@ const Quiz = () => {
   const reset = snapShot.v_Reset
   if (reset) handleQuizReset()
   //
-  //  No data
+  //  No data (Error)
   //
-  if (questCount === 0) {
+  if (g_questCount === 0) {
     if (g_log1) console.log('No data')
     return <p style={{ color: 'red' }}>No data</p>
   }
-  if (!quizRow) {
-    return <p style={{ color: 'red' }}>Quiz Row empty</p>
-  }
-  if (g_log1) console.log('quiz row ', quizRow)
   //...................................................................................
   //.  Render the form
   //...................................................................................
@@ -152,17 +154,17 @@ const Quiz = () => {
         subTitle='Answer the Quiz Questions'
         icon={<QuestionAnswer fontSize='large' />}
       />
-      <QuizHeader quizRow={quizRow} quizQuestion={rowIdx + 1} />
+      <QuizHeader quizRow={g_quizRow} quizQuestion={g_Idx + 1} />
 
       <QuizPanel
-        key={quizRow.qid}
-        quizRow={quizRow}
+        key={g_quizRow.qid}
+        quizRow={g_quizRow}
         handleSelect={handleSelect}
       />
-      <QuizHyperlinks quizRow={quizRow} />
+      <QuizHyperlinks quizRow={g_quizRow} />
       <QuizLinearProgress
         count={ansCount}
-        total={questCount}
+        total={g_questCount}
         text={'Progress'}
       />
       <QuizLinearProgress
