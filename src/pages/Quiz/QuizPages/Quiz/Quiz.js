@@ -31,7 +31,7 @@ import { ValtioStore } from '../../ValtioStore'
 //
 //  Debug logging
 //
-const g_log1 = true
+const g_log1 = false
 //
 //  Global store variables
 //

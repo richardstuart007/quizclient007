@@ -9,8 +9,7 @@ import { teal } from 'material-ui-colors'
 //
 //  Debug logging
 //
-const g_log1 = true
-
+const g_log1 = false
 //===================================================================================
 const QuizHeader = ({ quizRow, quizQuestion }) => {
   //...................................................................................

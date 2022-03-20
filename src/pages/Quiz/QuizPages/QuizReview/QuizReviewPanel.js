@@ -6,6 +6,10 @@ import { Typography, Box } from '@mui/material'
 //  Components
 //
 import QuizReviewCard from './QuizReviewCard'
+//
+//  Debug logging
+//
+const g_log1 = false
 //===================================================================================
 export default function QuizReviewPanel({ quizRow, quizanswer }) {
   const { qanswer_correct, qanswer_bad1, qanswer_bad2, qanswer_bad3 } = quizRow
@@ -14,7 +18,7 @@ export default function QuizReviewPanel({ quizRow, quizanswer }) {
   Ans.push(qanswer_bad2)
   Ans.push(qanswer_bad3)
 
-  console.log(quizanswer)
+  if (g_log1) console.log(quizanswer)
 
   return (
     <>

@@ -9,7 +9,6 @@ import { Typography, Button, Box } from '@mui/material'
 //  Debug logging
 //
 const g_log1 = false
-
 //===================================================================================
 const QuizHyperlinks = ({ quizRow }) => {
   //

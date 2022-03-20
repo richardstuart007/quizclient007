@@ -2,8 +2,10 @@
 //  Libraries
 //
 import axios from 'axios'
-
-const log1 = true
+//
+//  Debug logging
+//
+const g_log1 = false
 //
 // methods - post(get), post(update), delete(delete), put(upsert)
 //
@@ -22,7 +24,7 @@ const apiAxios = async (method, url, data) => {
     //
     //  Return rows
     //
-    if (log1) console.log('return data rows ', response.data.length)
+    if (g_log1) console.log('return data rows ', response.data.length)
     return response.data
     //
     //  Catch Error

@@ -28,10 +28,6 @@ import { ValtioStore } from '../../ValtioStore'
 const { URL_BASE } = require('../../../../services/constants.js')
 const { URL_REGISTER } = require('../../../../services/constants.js')
 const sqlClient = 'Quiz/Register'
-//
-// Debugging
-//
-const g_log1 = true
 //.............................................................................
 //.  Data Input Fields
 //.............................................................................

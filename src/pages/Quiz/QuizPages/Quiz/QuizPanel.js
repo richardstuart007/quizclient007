@@ -13,13 +13,13 @@ import QuizPanelCard from './QuizPanelCard'
 //
 // Constants
 //
-const log = false
+const g_log1 = false
 //===================================================================================
 const QuizPanel = ({ quizRow, handleSelect }) => {
   //
   //  Deconstruct row
   //
-  if (log) console.log('quizRow ', quizRow)
+  if (g_log1) console.log('quizRow ', quizRow)
   const { qanswer_correct, qanswer_bad1, qanswer_bad2, qanswer_bad3 } = quizRow
   //
   //  Answers array
@@ -48,7 +48,7 @@ const QuizPanel = ({ quizRow, handleSelect }) => {
   //  Sort the Answers by the random sort id
   //
   Answers.sort((a, b) => (a.random > b.random ? 1 : -1))
-  if (log) console.log(Answers)
+  if (g_log1) console.log(Answers)
   //
   //  Format Panel
   //

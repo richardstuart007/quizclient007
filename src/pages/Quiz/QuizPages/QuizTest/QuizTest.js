@@ -23,10 +23,6 @@ import { ValtioStore } from '../../ValtioStore'
 //.  Initialisation
 //.............................................................................
 //
-// Debugging
-//
-const g_log1 = true
-//
 // Constants
 //
 const { QUESTIONS_DATA } = require('./QuizTestData.js')

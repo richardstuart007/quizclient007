@@ -9,9 +9,7 @@ import { LinearProgress, Typography, Box } from '@mui/material'
 //
 //  Debug logging
 //
-const g_log1 = true
-//===================================================================================
-//=  This Component
+const g_log1 = false
 //===================================================================================
 const QuizLinearProgress = props => {
   const { count, total, text } = props

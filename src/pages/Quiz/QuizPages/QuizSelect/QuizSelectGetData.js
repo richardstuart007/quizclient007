@@ -14,7 +14,7 @@ const { SQL_MAXROWS } = require('../../../../services/constants.js')
 //
 //  Debug logging
 //
-const g_log1 = true
+const g_log1 = false
 //===================================================================================
 async function QuizSelectGetData({ qowner, qgroup1, qgroup2 }) {
   //--------------------------------------------------------------------
