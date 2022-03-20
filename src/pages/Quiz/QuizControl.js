@@ -23,6 +23,7 @@ import { ValtioStore } from './ValtioStore'
 const g_log1 = false
 //===================================================================================
 function QuizControl() {
+  if (g_log1) console.log('Start QuizControl')
   //
   //  Define the ValtioStore
   //

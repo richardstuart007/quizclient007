@@ -29,7 +29,8 @@ import QuizRandomSort from '../../../../services/QuizRandomSort'
 //
 //  Constants
 //
-const { SQL_MAXROWS } = require('../../../../services/constants.js')
+const { ROWS_DEFAULT } = require('../../../../services/constants.js')
+const { ROWS_MAX } = require('../../../../services/constants.js')
 //..............................................................................
 //.  Initialisation
 //.............................................................................
@@ -46,7 +47,8 @@ const g_log1 = true
 const initialFValues = {
   qowner: 'public',
   qgroup1: '',
-  qgroup2: ''
+  qgroup2: '',
+  MaxQuestions: ROWS_DEFAULT
 }
 //
 //  Saved Values on Submit
@@ -54,11 +56,12 @@ const initialFValues = {
 const savedValues = {
   qowner: '',
   qgroup1: '',
-  qgroup2: ''
+  qgroup2: '',
+  MaxQuestions: 0
 }
 //===================================================================================
 const QuizSelect = () => {
-  if (g_log1) console.log('QuizSelect')
+  if (g_log1) console.log('Start QuizSelect')
   //
   //  Define the ValtioStore
   //
@@ -79,6 +82,12 @@ const QuizSelect = () => {
     if ('qgroup1' in fieldValues)
       temp.qgroup1 =
         fieldValues.qgroup1.length !== 0 ? '' : 'This field is required.'
+    if ('MaxQuestions' in fieldValues)
+      temp.MaxQuestions =
+        parseInt(fieldValues.MaxQuestions) > 0 &&
+        parseInt(fieldValues.MaxQuestions) <= ROWS_MAX
+          ? ''
+          : `You must select between 1 and ${ROWS_MAX}.`
     setErrors({
       ...temp
     })
@@ -107,18 +116,11 @@ const QuizSelect = () => {
     savedValues.qowner = values.qowner
     savedValues.qgroup1 = values.qgroup1
     savedValues.qgroup2 = values.qgroup2
+    savedValues.MaxQuestions = values.MaxQuestions
     //
     //  Test mode then filter v_Data to v_Quest, else populate v_Data/v_Quest from server
     //
     snapShot.v_TestData ? filterData() : getServerData()
-    //
-    //  Update other store values
-    //
-    ValtioStore.v_Page = 'Quiz'
-    ValtioStore.v_Reset = true
-    ValtioStore.v_Owner = savedValues.qowner
-    ValtioStore.v_Group1 = savedValues.qgroup1
-    ValtioStore.v_Group2 = savedValues.qgroup2
   }
   //...................................................................................
   //.  Get Data from server
@@ -163,10 +165,25 @@ const QuizSelect = () => {
         //
         if (g_log1) console.log('update v_Quest', sortedData)
         ValtioStore.v_Quest = sortedData
+        //
+        //  Update other store values
+        //
+        updateStore()
       }
     })
   }
-
+  //...................................................................................
+  //.  Update Store
+  //...................................................................................
+  const updateStore = () => {
+    if (g_log1) console.log('snapShot.v_Quest', snapShot.v_Quest)
+    ValtioStore.v_Page = 'Quiz'
+    ValtioStore.v_Reset = true
+    ValtioStore.v_Owner = savedValues.qowner
+    ValtioStore.v_Group1 = savedValues.qgroup1
+    ValtioStore.v_Group2 = savedValues.qgroup2
+    ValtioStore.v_MaxQuestions = savedValues.MaxQuestions
+  }
   //...................................................................................
   //.  Filter v_Data into v_Quest
   //...................................................................................
@@ -202,7 +219,7 @@ const QuizSelect = () => {
     //
     if (g_log1) console.log('filteredData ', filteredData)
     if (filteredData.length === 0) {
-      setForm_message('No data found')
+      setForm_message('QuizSelect: No data found')
       return
     }
     //
@@ -219,12 +236,16 @@ const QuizSelect = () => {
     do {
       if (i < sortedData.length) quest.push(sortedData[i])
       i++
-    } while (i < SQL_MAXROWS)
+    } while (i < savedValues.MaxQuestions)
     //
     // update ValtioStore - Questions
     //
     if (g_log1) console.log('update v_Quest', quest)
     ValtioStore.v_Quest = quest
+    //
+    //  Update other store values
+    //
+    updateStore()
   }
   //...................................................................................
   //.  Main Line
@@ -267,6 +288,7 @@ const QuizSelect = () => {
                     options={QuizServices.getOwnerCollection()}
                     error={errors.qowner}
                   />
+                  {/*.................................................................................................*/}
                 </Grid>
                 <Grid item xs={6}>
                   <Controls.MySelect
@@ -283,6 +305,17 @@ const QuizSelect = () => {
                     value={values.qgroup2}
                     onChange={handleInputChange}
                     options={QuizServices.getGroup2Collection()}
+                  />
+                </Grid>
+                {/*.................................................................................................*/}
+
+                <Grid item xs={6}>
+                  <Controls.MyInput
+                    name='MaxQuestions'
+                    label='MaxQuestions'
+                    value={values.MaxQuestions}
+                    onChange={handleInputChange}
+                    error={errors.MaxQuestions}
                   />
                 </Grid>
                 {/*.................................................................................................*/}

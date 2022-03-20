@@ -51,6 +51,7 @@ const validationSchema = Yup.object({
 })
 //===================================================================================
 function QuizSignin() {
+  if (g_log1) console.log('Start QuizSignin')
   //
   // Form Message
   //

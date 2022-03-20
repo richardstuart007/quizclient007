@@ -1,5 +1,6 @@
 exports.SQL_TABLE = 'questions'
-exports.SQL_MAXROWS = 5
+exports.ROWS_DEFAULT = 20
+exports.ROWS_MAX = 100
 
 exports.URL_BASE = 'http://localhost:10001'
 exports.URL_REGISTER = '/QuizRegister'

@@ -39,6 +39,10 @@ const initialValues = {
   email: '',
   password: ''
 }
+//
+// Debugging
+//
+const g_log1 = false
 //.............................................................................
 //.  Input field validation
 //.............................................................................
@@ -49,6 +53,7 @@ const validationSchema = Yup.object({
 })
 //===================================================================================
 function QuizRegister() {
+  if (g_log1) console.log('Start QuizRegister')
   //
   // Form Message
   //

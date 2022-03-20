@@ -11,13 +11,12 @@ const sqlClient = 'Quiz/QuizGetData'
 const { URL_BASE } = require('../../../../services/constants.js')
 const { URL_QUESTIONS } = require('../../../../services/constants.js')
 const { SQL_TABLE } = require('../../../../services/constants.js')
-const { SQL_MAXROWS } = require('../../../../services/constants.js')
 //
 //  Debug logging
 //
 const g_log1 = true
 //===================================================================================
-async function QuizSelectGetData({ qowner, qgroup1, qgroup2 }) {
+async function QuizSelectGetData({ qowner, qgroup1, qgroup2, MaxQuestions }) {
   //--------------------------------------------------------------------
   //.  fetch data
   //--------------------------------------------------------------------
@@ -28,9 +27,7 @@ async function QuizSelectGetData({ qowner, qgroup1, qgroup2 }) {
       //
       let sqlString = `* from ${SQL_TABLE} where qowner = '${qowner}' and qgroup1 = '${qgroup1}' `
       if (qgroup2) sqlString = sqlString.concat(` and qgroup2 = '${qgroup2}'`)
-      sqlString = sqlString.concat(
-        ` OFFSET 0 ROWS FETCH NEXT ${SQL_MAXROWS} ROWS ONLY`
-      )
+      sqlString = sqlString.concat(` FETCH NEXT ${MaxQuestions} ROWS ONLY`)
       if (g_log1) console.log('sqlString ', sqlString)
       //
       //  Setup actions

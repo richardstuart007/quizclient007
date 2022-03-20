@@ -7,9 +7,16 @@ import { ExitToApp } from '@mui/icons-material'
 //
 import QuizPageHeader from '../Common/QuizPageHeader'
 import QuizInfo from '../Common/QuizInfo'
-
+//.............................................................................
+//.  Initialisation
+//.............................................................................
+//
+//  Debug logging
+//
+const g_log1 = false
 //===================================================================================
 const QuizGoodbye = () => {
+  if (g_log1) console.log('Start QuizGoodbye')
   //...................................................................................
   //.  Render the form
   //...................................................................................

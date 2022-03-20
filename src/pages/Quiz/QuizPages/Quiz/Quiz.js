@@ -31,7 +31,7 @@ import { ValtioStore } from '../../ValtioStore'
 //
 //  Debug logging
 //
-const g_log1 = false
+const g_log1 = true
 //
 //  Global store variables
 //
@@ -41,6 +41,7 @@ let g_questCount = 0
 let g_quizRow = {}
 //===================================================================================
 const Quiz = () => {
+  if (g_log1) console.log('Start Quiz')
   //
   //  Define the State variables
   //

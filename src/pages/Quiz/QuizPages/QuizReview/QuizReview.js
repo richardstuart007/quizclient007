@@ -52,6 +52,11 @@ const QuizReview = () => {
   //.  First time data received
   //...................................................................................
   const firstLoad = () => {
+        //
+    //  Run once only
+    //
+    g_firstLoad = 'done'
+    if (g_log1) console.log('g_firstLoad ', g_firstLoad)
     //
     //  Initialise global variables
     //
@@ -128,9 +133,10 @@ const QuizReview = () => {
   //
   //  Load the data array from the store
   //
+  let g_firstLoad
   useEffect(() => {
-    firstLoad()
-  }, [])
+    if (g_firstLoad !== 'done') firstLoad()
+  }, [g_firstLoad])
   //
   //  No data
   //

@@ -24,9 +24,10 @@ import { ValtioStore } from '../../ValtioStore'
 //
 //  Debug logging
 //
-const g_log1 = false
+const g_log1 = true
 //===================================================================================
 const QuizResults = () => {
+  if (g_log1) console.log('Start QuizResults')
   //
   //  Define the State variables
   //
@@ -41,6 +42,11 @@ const QuizResults = () => {
   //.  First time data received
   //...................................................................................
   const firstLoad = () => {
+    //
+    //  Run once only
+    //
+    g_firstLoad = 'done'
+    if (g_log1) console.log('g_firstLoad ', g_firstLoad)
     //
     //  Get store data - Answers
     //
@@ -59,17 +65,16 @@ const QuizResults = () => {
     //
     if (AnsCount > 0) setMark(Math.round((100 * AnsPass) / AnsCount))
   }
-
   //...................................................................................
   //.  Main Line
   //...................................................................................
   //
   //  Load the data array from the store
   //
+  let g_firstLoad
   useEffect(() => {
-    firstLoad()
-  }, [])
-
+    if (g_firstLoad !== 'done') firstLoad()
+  }, [g_firstLoad])
   //...................................................................................
   //.  Render the form
   //...................................................................................

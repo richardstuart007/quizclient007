@@ -11,7 +11,8 @@ const ValtioStore = proxy({
   v_Data: [],
   v_Quest: [],
   v_Ans: [],
-  v_Reset: true
+  v_Reset: true,
+  v_MaxQuestions: 0
 })
 
 export { ValtioStore }

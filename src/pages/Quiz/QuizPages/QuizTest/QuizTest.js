@@ -1,10 +1,9 @@
 //
 //  Libraries
 //
-import { useState } from 'react'
 import { Formik, Form } from 'formik'
 import * as Yup from 'yup'
-import { Container, Grid, Typography } from '@mui/material'
+import { Container, Grid } from '@mui/material'
 import { Accessibility } from '@mui/icons-material'
 //
 //  Controls
@@ -46,10 +45,8 @@ const validationSchema = Yup.object({
 })
 //===================================================================================
 function QuizTest() {
-  //
-  // Form Message
-  //
-  const [form_message, setForm_message] = useState('')
+  if (g_log1) console.log('Start QuizTest')
+
   //...................................................................................
   //.  Form Submit
   //...................................................................................
@@ -99,10 +96,7 @@ function QuizTest() {
               <Grid item xs={12}>
                 <MyTextField name='email' label='email' />
               </Grid>
-              {/*.................................................................................................*/}
-              <Grid item xs={12}>
-                <Typography style={{ color: 'red' }}>{form_message}</Typography>
-              </Grid>
+
               {/*.................................................................................................*/}
               <Grid item xs={12}>
                 <Controls.MyButton
