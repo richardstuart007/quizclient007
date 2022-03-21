@@ -1,11 +1,11 @@
 //
 //  Libraries
 //
-import { useSnapshot } from 'valtio'
 import { useState } from 'react'
 import { Formik, Form } from 'formik'
 import { Container, Grid, Typography } from '@mui/material'
 import { Storage } from '@mui/icons-material'
+import { useSnapshot } from 'valtio'
 //
 //  Sub Components
 //
@@ -37,7 +37,7 @@ const { ROWS_MAX } = require('../../../../services/constants.js')
 //
 // Constants
 //
-let g_log1 = false
+const g_log1 = true
 //.............................................................................
 //.  Data Input Fields
 //.............................................................................
@@ -61,15 +61,11 @@ const savedValues = {
 }
 //===================================================================================
 const QuizSelect = () => {
+  if (g_log1) console.log('Start QuizSelect')
   //
   //  Define the ValtioStore
   //
   const snapShot = useSnapshot(ValtioStore)
-  //
-  //  Set Debug State
-  //
-  g_log1 = snapShot.v_Log
-  if (g_log1) console.log('Start QuizSelect')
   //
   // Form Message
   //

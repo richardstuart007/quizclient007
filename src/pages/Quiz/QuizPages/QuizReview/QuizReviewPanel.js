@@ -1,17 +1,34 @@
 //
 //  Libraries
 //
+import { useSnapshot } from 'valtio'
 import { Typography, Box } from '@mui/material'
 //
 //  Components
 //
 import QuizReviewCard from './QuizReviewCard'
 //
+//  Utilities
+//
+import { ValtioStore } from '../../ValtioStore'
+//
 //  Debug logging
 //
-const g_log1 = false
+let g_log1 = false
 //===================================================================================
 export default function QuizReviewPanel({ quizRow, quizanswer }) {
+  //
+  //  Define the ValtioStore
+  //
+  const snapShot = useSnapshot(ValtioStore)
+  //
+  //  Set Debug State
+  //
+  g_log1 = snapShot.v_Log
+  if (g_log1) console.log('Start QuizReviewPanel')
+  //
+  //  Deconstruct
+  //
   const { qanswer_correct, qanswer_bad1, qanswer_bad2, qanswer_bad3 } = quizRow
   let Ans = []
   Ans.push(qanswer_bad1)

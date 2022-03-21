@@ -14,9 +14,10 @@ const { SQL_TABLE } = require('../../../../services/constants.js')
 //
 //  Debug logging
 //
-const g_log1 = true
+let g_log1 = false
 //===================================================================================
 async function QuizSelectGetData({ qowner, qgroup1, qgroup2, MaxQuestions }) {
+  if (g_log1) console.log('Start QuizSelectGetData')
   //--------------------------------------------------------------------
   //.  fetch data
   //--------------------------------------------------------------------

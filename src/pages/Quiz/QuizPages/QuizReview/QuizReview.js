@@ -30,9 +30,17 @@ import { ValtioStore } from '../../ValtioStore'
 //
 //  Debug logging
 //
-const g_log1 = false
+let g_log1 = false
 //===================================================================================
 const QuizReview = () => {
+  //
+  //  Define the ValtioStore
+  //
+  const snapShot = useSnapshot(ValtioStore)
+  //
+  //  Set Debug State
+  //
+  g_log1 = snapShot.v_Log
   if (g_log1) console.log('Start QuizReview')
   //
   //  Define the State variables
@@ -44,19 +52,11 @@ const QuizReview = () => {
   const [rowIdx, setRowIdx] = useState(0)
   const [quizQuest, setQuizQuest] = useState([])
   const [quizAns, setQuizAns] = useState([])
-  //
-  //  Define the ValtioStore
-  //
-  const snapShot = useSnapshot(ValtioStore)
   //...................................................................................
   //.  First time data received
   //...................................................................................
   const firstLoad = () => {
-        //
-    //  Run once only
-    //
-    g_firstLoad = 'done'
-    if (g_log1) console.log('g_firstLoad ', g_firstLoad)
+    if (g_log1) console.log('firstLoad ')
     //
     //  Initialise global variables
     //
@@ -101,18 +101,17 @@ const QuizReview = () => {
   //...................................................................................
   const nextQuestion = () => {
     if (g_log1) console.log('nextQuestion ')
-    console.log(quizQuest)
+    if (g_log1) console.log(quizQuest)
     //
     //  More rows
     //
-    console.log(rowIdx, ansCount)
+    if (g_log1) console.log(rowIdx, ansCount)
     if (rowIdx + 1 < ansCount) {
       const RowIdx = rowIdx + 1
       setRowIdx(RowIdx)
       setQuizRow(quizQuest[RowIdx])
     }
   }
-
   //...................................................................................
   //.  Previous Question
   //...................................................................................
@@ -133,10 +132,10 @@ const QuizReview = () => {
   //
   //  Load the data array from the store
   //
-  let g_firstLoad
   useEffect(() => {
-    if (g_firstLoad !== 'done') firstLoad()
-  }, [g_firstLoad])
+    firstLoad()
+    // eslint-disable-next-line
+  }, [])
   //
   //  No data
   //

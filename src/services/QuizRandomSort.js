@@ -1,7 +1,7 @@
 //
 //  Debug logging
 //
-const g_log1 = true
+const g_log1 = false
 //===================================================================================
 function QuizRandomSort(dataIn) {
   //

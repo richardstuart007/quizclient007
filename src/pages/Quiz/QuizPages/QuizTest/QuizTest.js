@@ -1,6 +1,7 @@
 //
 //  Libraries
 //
+import { useSnapshot } from 'valtio'
 import { Formik, Form } from 'formik'
 import * as Yup from 'yup'
 import { Container, Grid } from '@mui/material'
@@ -28,7 +29,7 @@ const { QUESTIONS_DATA } = require('./QuizTestData.js')
 //
 //  Debug logging
 //
-const g_log1 = true
+let g_log1 = false
 //
 //  Initial Values
 //
@@ -45,8 +46,15 @@ const validationSchema = Yup.object({
 })
 //===================================================================================
 function QuizTest() {
+  //
+  //  Define the ValtioStore
+  //
+  const snapShot = useSnapshot(ValtioStore)
+  //
+  //  Set Debug State
+  //
+  g_log1 = snapShot.v_Log
   if (g_log1) console.log('Start QuizTest')
-
   //...................................................................................
   //.  Form Submit
   //...................................................................................
@@ -114,6 +122,12 @@ function QuizTest() {
                   text='Register'
                   onClick={() => {
                     ValtioStore.v_Page = 'QuizRegister'
+                  }}
+                />
+                <Controls.MyButton
+                  text='Settings'
+                  onClick={() => {
+                    ValtioStore.v_Page = 'QuizSettings'
                   }}
                 />
               </Grid>

@@ -24,9 +24,17 @@ import { ValtioStore } from '../../ValtioStore'
 //
 //  Debug logging
 //
-const g_log1 = true
+let g_log1 = false
 //===================================================================================
 const QuizResults = () => {
+  //
+  //  Define the ValtioStore
+  //
+  const snapShot = useSnapshot(ValtioStore)
+  //
+  //  Set Debug State
+  //
+  g_log1 = snapShot.v_Log
   if (g_log1) console.log('Start QuizResults')
   //
   //  Define the State variables
@@ -34,19 +42,11 @@ const QuizResults = () => {
   const [ansPass, setAnsPass] = useState(0)
   const [ansCount, setAnsCount] = useState(0)
   const [mark, setMark] = useState(0)
-  //
-  //  Define the ValtioStore
-  //
-  const snapShot = useSnapshot(ValtioStore)
   //...................................................................................
   //.  First time data received
   //...................................................................................
   const firstLoad = () => {
-    //
-    //  Run once only
-    //
-    g_firstLoad = 'done'
-    if (g_log1) console.log('g_firstLoad ', g_firstLoad)
+    if (g_log1) console.log('firstLoad')
     //
     //  Get store data - Answers
     //
@@ -71,10 +71,10 @@ const QuizResults = () => {
   //
   //  Load the data array from the store
   //
-  let g_firstLoad
   useEffect(() => {
-    if (g_firstLoad !== 'done') firstLoad()
-  }, [g_firstLoad])
+    firstLoad()
+    // eslint-disable-next-line
+  }, [])
   //...................................................................................
   //.  Render the form
   //...................................................................................

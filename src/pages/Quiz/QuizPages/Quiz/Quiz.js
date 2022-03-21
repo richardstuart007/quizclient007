@@ -31,7 +31,7 @@ import { ValtioStore } from '../../ValtioStore'
 //
 //  Debug logging
 //
-const g_log1 = true
+let g_log1 = false
 //
 //  Global store variables
 //
@@ -41,16 +41,20 @@ let g_questCount = 0
 let g_quizRow = {}
 //===================================================================================
 const Quiz = () => {
+  //
+  //  Define the ValtioStore
+  //
+  const snapShot = useSnapshot(ValtioStore)
+  //
+  //  Set Debug State
+  //
+  g_log1 = snapShot.v_Log
   if (g_log1) console.log('Start Quiz')
   //
   //  Define the State variables
   //
   const [ansPass, setAnsPass] = useState(0)
   const [ansCount, setAnsCount] = useState(0)
-  //
-  //  Define the ValtioStore
-  //
-  const snapShot = useSnapshot(ValtioStore)
   //...................................................................................
   //.  Reset the Quiz
   //...................................................................................

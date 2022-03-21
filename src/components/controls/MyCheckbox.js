@@ -1,8 +1,4 @@
-import {
-  FormControl,
-  FormControlLabel,
-  Checkbox as MuiCheckbox
-} from '@mui/material'
+import { FormControl, FormControlLabel, Checkbox } from '@mui/material'
 
 export default function MyCheckbox(props) {
   const { name, label, value, onChange } = props
@@ -18,7 +14,7 @@ export default function MyCheckbox(props) {
     <FormControl>
       <FormControlLabel
         control={
-          <MuiCheckbox
+          <Checkbox
             name={name}
             color='primary'
             checked={value}

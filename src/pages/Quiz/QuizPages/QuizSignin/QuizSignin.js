@@ -1,6 +1,7 @@
 //
 //  Libraries
 //
+import { useSnapshot } from 'valtio'
 import { useState } from 'react'
 import { Formik, Form } from 'formik'
 import * as Yup from 'yup'
@@ -31,7 +32,7 @@ const sqlClient = 'Quiz/Signin'
 //
 // Debugging
 //
-const g_log1 = false
+let g_log1 = false
 //.............................................................................
 //.  Data Input Fields
 //.............................................................................
@@ -51,6 +52,14 @@ const validationSchema = Yup.object({
 })
 //===================================================================================
 function QuizSignin() {
+  //
+  //  Define the ValtioStore
+  //
+  const snapShot = useSnapshot(ValtioStore)
+  //
+  //  Set Debug State
+  //
+  g_log1 = snapShot.v_Log
   if (g_log1) console.log('Start QuizSignin')
   //
   // Form Message

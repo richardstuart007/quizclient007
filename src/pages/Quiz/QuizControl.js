@@ -6,6 +6,7 @@ import { useSnapshot } from 'valtio'
 //  Sub Components
 //
 import QuizTest from './QuizPages/QuizTest/QuizTest'
+import QuizSettings from './QuizPages/QuizSettings/QuizSettings'
 import QuizRegister from './QuizPages/QuizRegister/QuizRegister'
 import QuizSignin from './QuizPages/QuizSignin/QuizSignin'
 import QuizSelect from './QuizPages/QuizSelect/QuizSelect'
@@ -20,14 +21,18 @@ import { ValtioStore } from './ValtioStore'
 //
 //  Debug logging
 //
-const g_log1 = false
+let g_log1 = false
 //===================================================================================
 function QuizControl() {
-  if (g_log1) console.log('Start QuizControl')
   //
   //  Define the ValtioStore
   //
   const snapShot = useSnapshot(ValtioStore)
+  //
+  //  Set Debug State
+  //
+  g_log1 = snapShot.v_Log
+  if (g_log1) console.log('Start QuizControl')
   //
   //  Retrieve the state
   //
@@ -37,6 +42,8 @@ function QuizControl() {
   //  Present the selected component
   //
   switch (page) {
+    case 'QuizSettings':
+      return <QuizSettings />
     case 'QuizTest':
       return <QuizTest />
     case 'QuizRegister':

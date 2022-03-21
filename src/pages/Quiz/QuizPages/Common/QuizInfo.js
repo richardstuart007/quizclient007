@@ -7,7 +7,6 @@ import { useSnapshot } from 'valtio'
 //  Utilities
 //
 import { ValtioStore } from '../../ValtioStore'
-
 //===================================================================================
 const QuizInfo = () => {
   //...................................................................................
@@ -26,6 +25,11 @@ const QuizInfo = () => {
   const owner = snapShot.v_Owner
   const group1 = snapShot.v_Group1
   const group2 = snapShot.v_Group2
+  let DataSource
+  snapShot.v_TestData === true
+    ? (DataSource = 'TestData')
+    : (DataSource = 'ServerData')
+
   //...................................................................................
   //.  Render the form
   //...................................................................................
@@ -44,7 +48,7 @@ const QuizInfo = () => {
               <Box>{email}</Box>
             </Grid>
             <Grid item xs={12} sm={4}>
-              <Box borderBottom={1}>Selection</Box>
+              <Box borderBottom={1}>{`Selection (${DataSource})`}</Box>
               <Box>{owner}</Box>
               <Box>{group1}</Box>
               <Box>{group2}</Box>
