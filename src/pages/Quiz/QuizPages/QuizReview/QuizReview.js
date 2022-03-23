@@ -168,16 +168,11 @@ const QuizReview = () => {
       <QuizHyperlinks quizRow={quizRow} />
 
       <Box sx={{ mt: 2 }}>
-        <Typography variant='subtitle2' gutterBottom>
-          Navigation
-        </Typography>
-
         <Controls.MyButton
           type='submit'
           text='Previous'
           color='primary'
           variant='contained'
-          size='large'
           onClick={() => handlePrevious()}
         />
 
@@ -185,11 +180,15 @@ const QuizReview = () => {
           type='submit'
           text='Next'
           color='primary'
-          size='large'
           variant='contained'
           onClick={() => nextQuestion()}
         />
+      </Box>
 
+      <Box sx={{ mt: 2 }}>
+        <Typography variant='subtitle2' gutterBottom>
+          Navigation
+        </Typography>
         <Controls.MyButton
           type='submit'
           text='Restart'

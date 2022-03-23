@@ -16,6 +16,7 @@ import MyTextField from '../../../../components/controls/MyTextField'
 //  Common Sub Components
 //
 import QuizPageHeader from '../Common/QuizPageHeader'
+import QuizInfo from '../Common/QuizInfo'
 //
 //  Utilities
 //
@@ -40,8 +41,8 @@ let g_log1 = false
 //  Initial Values
 //
 const initialValues = {
-  email: 'andrew@gmail.com',
-  password: 'andrew'
+  email: 'quizuser@gmail.com',
+  password: 'quizuser'
 }
 //.............................................................................
 //.  Input field validation
@@ -106,48 +107,63 @@ function QuizSignin() {
   //.  Render the form
   //...................................................................................
   return (
-    <Grid container>
-      <Container>
-        <Formik
-          initialValues={initialValues}
-          validationSchema={validationSchema}
-          onSubmit={onSubmitForm}
-          enableReinitialize
-        >
-          <Form>
-            <QuizPageHeader
-              title='Sign In'
-              subTitle='Register first'
-              icon={<Accessibility fontSize='large' />}
-            />
+    <>
+      <Grid container>
+        <Container>
+          <Formik
+            initialValues={initialValues}
+            validationSchema={validationSchema}
+            onSubmit={onSubmitForm}
+            enableReinitialize
+          >
+            <Form>
+              <QuizPageHeader
+                title='Sign In'
+                subTitle='Register first'
+                icon={<Accessibility fontSize='large' />}
+              />
 
-            {/*.................................................................................................*/}
-            <Grid container spacing={2}>
-              <Grid item xs={12}>
-                <MyTextField name='email' label='email' />
-              </Grid>
-              <Grid item xs={12}>
-                <MyTextField name='password' label='password' />
-              </Grid>
               {/*.................................................................................................*/}
-              <Grid item xs={12}>
-                <Typography style={{ color: 'red' }}>{form_message}</Typography>
+              <Grid container spacing={2}>
+                <Grid item xs={12}>
+                  <MyTextField name='email' label='email' />
+                </Grid>
+                <Grid item xs={12}>
+                  <MyTextField name='password' label='password' />
+                </Grid>
+                {/*.................................................................................................*/}
+                <Grid item xs={12}>
+                  <Typography style={{ color: 'red' }}>
+                    {form_message}
+                  </Typography>
+                </Grid>
+                {/*.................................................................................................*/}
+                <Grid item xs={12}>
+                  <Controls.MyButton
+                    type='submit'
+                    text='SignIn'
+                    value='Submit'
+                  />
+                  <Typography variant='subtitle2' gutterBottom>
+                    Navigation
+                  </Typography>
+
+                  <Controls.MyButton
+                    text='Register'
+                    color='secondary'
+                    variant='outlined'
+                    onClick={() => {
+                      ValtioStore.v_Page = 'QuizRegister'
+                    }}
+                  />
+                </Grid>
               </Grid>
-              {/*.................................................................................................*/}
-              <Grid item xs={12}>
-                <Controls.MyButton type='submit' text='SignIn' value='Submit' />
-                <Controls.MyButton
-                  text='Register'
-                  onClick={() => {
-                    ValtioStore.v_Page = 'QuizRegister'
-                  }}
-                />
-              </Grid>
-            </Grid>
-          </Form>
-        </Formik>
-      </Container>
-    </Grid>
+            </Form>
+          </Formik>
+        </Container>
+      </Grid>
+      <QuizInfo />
+    </>
   )
 }
 

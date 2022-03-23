@@ -186,7 +186,7 @@ const Quiz = () => {
         <Controls.MyButton
           type='submit'
           text='Restart'
-          color='primary'
+          color='secondary'
           variant='outlined'
           onClick={() => {
             ValtioStore.v_Reset = true
@@ -196,7 +196,7 @@ const Quiz = () => {
         <Controls.MyButton
           type='submit'
           text='NewQuiz'
-          color='primary'
+          color='secondary'
           variant='outlined'
           onClick={() => {
             ValtioStore.v_Page = 'QuizSelect'
@@ -205,7 +205,7 @@ const Quiz = () => {
         <Controls.MyButton
           type='submit'
           text='Results'
-          color='primary'
+          color='secondary'
           variant='outlined'
           onClick={() => {
             ValtioStore.v_Page = 'QuizResults'
@@ -215,7 +215,7 @@ const Quiz = () => {
         <Controls.MyButton
           type='submit'
           text='Quit'
-          color='primary'
+          color='secondary'
           variant='outlined'
           onClick={() => {
             ValtioStore.v_Page = 'QuizGoodbye'

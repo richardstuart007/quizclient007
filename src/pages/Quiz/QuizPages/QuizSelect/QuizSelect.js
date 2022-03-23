@@ -16,6 +16,7 @@ import * as QuizServices from './QuizServices'
 //
 import { useQForm, QForm } from '../../useQForm'
 import QuizPageHeader from '../Common/QuizPageHeader'
+import QuizInfo from '../Common/QuizInfo'
 //
 //  Controls
 //
@@ -267,82 +268,85 @@ const QuizSelect = () => {
   //.  Render the form
   //...................................................................................
   return (
-    <Grid container>
-      <Container>
-        <Formik
-          initialValues={initialFValues}
-          onSubmit={onSubmitForm}
-          enableReinitialize
-        >
-          <Form>
-            <QuizPageHeader
-              title='Question Selection'
-              subTitle='Select the question data-set'
-              icon={<Storage fontSize='large' />}
-            />
-            <QForm>
-              <Grid container spacing={2}>
-                {/*.................................................................................................*/}
-                <Grid item xs={6}>
-                  <Controls.MySelect
-                    name='qowner'
-                    label='Owner'
-                    value={values.qowner}
-                    onChange={handleInputChange}
-                    options={QuizServices.getOwnerCollection()}
-                    error={errors.qowner}
-                  />
+    <>
+      <Grid container>
+        <Container>
+          <Formik
+            initialValues={initialFValues}
+            onSubmit={onSubmitForm}
+            enableReinitialize
+          >
+            <Form>
+              <QuizPageHeader
+                title='Question Selection'
+                subTitle='Select the question data-set'
+                icon={<Storage fontSize='large' />}
+              />
+              <QForm>
+                <Grid container spacing={2}>
                   {/*.................................................................................................*/}
-                </Grid>
-                <Grid item xs={6}>
-                  <Controls.MySelect
-                    name='qgroup1'
-                    label='Group1'
-                    value={values.qgroup1}
-                    onChange={handleInputChange}
-                    options={QuizServices.getGroup1Collection()}
-                    error={errors.qgroup1}
-                  />
-                  <Controls.MySelect
-                    name='qgroup2'
-                    label='Group2'
-                    value={values.qgroup2}
-                    onChange={handleInputChange}
-                    options={QuizServices.getGroup2Collection()}
-                  />
-                </Grid>
-                {/*.................................................................................................*/}
+                  <Grid item xs={6}>
+                    <Controls.MySelect
+                      name='qowner'
+                      label='Owner'
+                      value={values.qowner}
+                      onChange={handleInputChange}
+                      options={QuizServices.getOwnerCollection()}
+                      error={errors.qowner}
+                    />
+                    {/*.................................................................................................*/}
+                  </Grid>
+                  <Grid item xs={6}>
+                    <Controls.MySelect
+                      name='qgroup1'
+                      label='Group1'
+                      value={values.qgroup1}
+                      onChange={handleInputChange}
+                      options={QuizServices.getGroup1Collection()}
+                      error={errors.qgroup1}
+                    />
+                    <Controls.MySelect
+                      name='qgroup2'
+                      label='Group2'
+                      value={values.qgroup2}
+                      onChange={handleInputChange}
+                      options={QuizServices.getGroup2Collection()}
+                    />
+                  </Grid>
+                  {/*.................................................................................................*/}
 
-                <Grid item xs={6}>
-                  <Controls.MyInput
-                    name='MaxQuestions'
-                    label='MaxQuestions'
-                    value={values.MaxQuestions}
-                    onChange={handleInputChange}
-                    error={errors.MaxQuestions}
-                  />
-                </Grid>
-                {/*.................................................................................................*/}
-                <Grid item xs={12}>
-                  <Typography style={{ color: 'red' }}>
-                    {form_message}
-                  </Typography>
-                </Grid>
+                  <Grid item xs={6}>
+                    <Controls.MyInput
+                      name='MaxQuestions'
+                      label='MaxQuestions'
+                      value={values.MaxQuestions}
+                      onChange={handleInputChange}
+                      error={errors.MaxQuestions}
+                    />
+                  </Grid>
+                  {/*.................................................................................................*/}
+                  <Grid item xs={12}>
+                    <Typography style={{ color: 'red' }}>
+                      {form_message}
+                    </Typography>
+                  </Grid>
 
-                {/*.................................................................................................*/}
-                <Grid item xs={12}>
-                  <Controls.MyButton
-                    type='submit'
-                    text='Start Quiz'
-                    value='Submit'
-                  />
+                  {/*.................................................................................................*/}
+                  <Grid item xs={12}>
+                    <Controls.MyButton
+                      type='submit'
+                      text='Start Quiz'
+                      value='Submit'
+                    />
+                  </Grid>
                 </Grid>
-              </Grid>
-            </QForm>
-          </Form>
-        </Formik>
-      </Container>
-    </Grid>
+              </QForm>
+            </Form>
+          </Formik>
+        </Container>
+      </Grid>
+      <QuizInfo />
+    </>
   )
 }
 

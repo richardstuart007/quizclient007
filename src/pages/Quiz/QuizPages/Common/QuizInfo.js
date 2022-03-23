@@ -27,8 +27,8 @@ const QuizInfo = () => {
   const group2 = snapShot.v_Group2
   let DataSource
   snapShot.v_TestData === true
-    ? (DataSource = 'TestData')
-    : (DataSource = 'ServerData')
+    ? (DataSource = 'Static')
+    : (DataSource = 'Server')
 
   //...................................................................................
   //.  Render the form
@@ -49,9 +49,9 @@ const QuizInfo = () => {
             </Grid>
             <Grid item xs={12} sm={4}>
               <Box borderBottom={1}>{`Selection (${DataSource})`}</Box>
-              <Box>{owner}</Box>
-              <Box>{group1}</Box>
-              <Box>{group2}</Box>
+              {{ owner } ? <Box>{owner}</Box> : null}
+              {{ group1 } ? <Box>{group1}</Box> : null}
+              {{ group2 } ? <Box>{group2}</Box> : null}
             </Grid>
           </Grid>
         </Container>

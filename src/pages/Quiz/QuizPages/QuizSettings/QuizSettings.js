@@ -25,21 +25,6 @@ import { ValtioStore } from '../../ValtioStore'
 // Constants
 //
 let g_log1 = false
-//.............................................................................
-//.  Data Input Fields
-//.............................................................................
-//
-//  Initial Values
-//
-const initialFValues = {
-  z_Log: false
-}
-//
-//  Saved Values on Submit
-//
-const savedValues = {
-  z_Log: false
-}
 //===================================================================================
 const QuizSettings = () => {
   //
@@ -51,6 +36,20 @@ const QuizSettings = () => {
   //
   g_log1 = snapShot.v_Log
   if (g_log1) console.log('Start QuizSettings')
+  //
+  //  Initial Values
+  //
+  const initialFValues = {
+    z_Log: snapShot.v_Log,
+    z_TestData: snapShot.v_TestData
+  }
+  //
+  //  Saved Values on Submit
+  //
+  const savedValues = {
+    z_Log: false,
+    z_TestData: false
+  }
   //.............................................................................
   //.  Input field validation
   //.............................................................................
@@ -58,6 +57,7 @@ const QuizSettings = () => {
     if (g_log1) console.log('fieldValues ', fieldValues)
     let temp = { ...errors }
     if ('z_Log' in fieldValues) temp.z_Log = ''
+    if ('z_TestData' in fieldValues) temp.z_TestData = ''
     setErrors({
       ...temp
     })
@@ -85,12 +85,15 @@ const QuizSettings = () => {
     //
     if (g_log1) console.log(values)
     savedValues.z_Log = values.z_Log
+    savedValues.z_TestData = values.z_TestData
     //
     //  Update Store
     //
     if (g_log1) console.log('Update Store: v_Log ', savedValues.z_Log)
+    if (g_log1) console.log('Update Store: z_TestData ', savedValues.z_TestData)
     ValtioStore.v_Page = 'QuizTest'
     ValtioStore.v_Log = savedValues.z_Log
+    ValtioStore.v_TestData = savedValues.z_TestData
   }
   //...................................................................................
   //.  Main Line
@@ -132,12 +135,22 @@ const QuizSettings = () => {
                     error={errors.z_Log}
                   />
                 </Grid>
+
+                <Grid item xs={6}>
+                  <Controls.MyCheckbox
+                    name='z_TestData'
+                    label='Static Data'
+                    value={values.z_TestData}
+                    onChange={handleInputChange}
+                    error={errors.z_TestData}
+                  />
+                </Grid>
               </Grid>
               {/*.................................................................................................*/}
               <Grid item xs={12}>
                 <Controls.MyButton
                   type='submit'
-                  text='TestQuiz'
+                  text='Test SignIn'
                   value='Submit'
                 />
               </Grid>

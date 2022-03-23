@@ -16,6 +16,7 @@ import MyTextField from '../../../../components/controls/MyTextField'
 //  Common Sub Components
 //
 import QuizPageHeader from '../Common/QuizPageHeader'
+import QuizInfo from '../Common/QuizInfo'
 //
 //  Utilities
 //
@@ -108,54 +109,66 @@ function QuizRegister() {
   //.  Render the form
   //...................................................................................
   return (
-    <Grid container>
-      <Container>
-        <Formik
-          initialValues={initialValues}
-          validationSchema={validationSchema}
-          onSubmit={onSubmitForm}
-          enableReinitialize
-        >
-          <Form>
-            <QuizPageHeader
-              title='Register'
-              subTitle='Register a new user'
-              icon={<HowToReg fontSize='large' />}
-            />
-            <Grid container spacing={2}>
-              {/*.................................................................................................*/}
-              <Grid item xs={12}>
-                <MyTextField name='name' label='name' />
+    <>
+      <Grid container>
+        <Container>
+          <Formik
+            initialValues={initialValues}
+            validationSchema={validationSchema}
+            onSubmit={onSubmitForm}
+            enableReinitialize
+          >
+            <Form>
+              <QuizPageHeader
+                title='Register'
+                subTitle='Register a new user'
+                icon={<HowToReg fontSize='large' />}
+              />
+              <Grid container spacing={2}>
+                {/*.................................................................................................*/}
+                <Grid item xs={12}>
+                  <MyTextField name='name' label='name' />
+                </Grid>
+                <Grid item xs={12}>
+                  <MyTextField name='email' label='email' />
+                </Grid>
+                <Grid item xs={12}>
+                  <MyTextField name='password' label='password' />
+                </Grid>
+                {/*.................................................................................................*/}
+                <Grid item xs={12}>
+                  <Typography style={{ color: 'red' }}>
+                    {form_message}
+                  </Typography>
+                </Grid>
+                {/*.................................................................................................*/}
+                <Grid item xs={12}>
+                  <Controls.MyButton
+                    type='submit'
+                    text='Register'
+                    value='Submit'
+                  />
+
+                  <Typography variant='subtitle2' gutterBottom>
+                    Navigation
+                  </Typography>
+
+                  <Controls.MyButton
+                    text='Signin'
+                    variant='outlined'
+                    color='secondary'
+                    onClick={() => {
+                      ValtioStore.v_Page = 'QuizSignin'
+                    }}
+                  />
+                </Grid>
               </Grid>
-              <Grid item xs={12}>
-                <MyTextField name='email' label='email' />
-              </Grid>
-              <Grid item xs={12}>
-                <MyTextField name='password' label='password' />
-              </Grid>
-              {/*.................................................................................................*/}
-              <Grid item xs={12}>
-                <Typography style={{ color: 'red' }}>{form_message}</Typography>
-              </Grid>
-              {/*.................................................................................................*/}
-              <Grid item xs={12}>
-                <Controls.MyButton
-                  type='submit'
-                  text='Register'
-                  value='Submit'
-                />
-                <Controls.MyButton
-                  text='Signin'
-                  onClick={() => {
-                    ValtioStore.v_Page = 'QuizSignin'
-                  }}
-                />
-              </Grid>
-            </Grid>
-          </Form>
-        </Formik>
-      </Container>
-    </Grid>
+            </Form>
+          </Formik>
+        </Container>
+      </Grid>
+      <QuizInfo />
+    </>
   )
 }
 

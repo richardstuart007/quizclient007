@@ -91,19 +91,21 @@ const QuizResults = () => {
         </Typography>
       </Box>
       <Box sx={{ mt: 2 }}>
-        <Typography variant='subtitle2' gutterBottom>
-          Navigation
-        </Typography>
         <Controls.MyButton
           type='submit'
           text='Review'
           color='primary'
-          size='large'
           variant='contained'
           onClick={() => {
             ValtioStore.v_Page = 'QuizReview'
           }}
         />
+      </Box>
+      <Box sx={{ mt: 2 }}>
+        <Typography variant='subtitle2' gutterBottom>
+          Navigation
+        </Typography>
+
         <Controls.MyButton
           type='submit'
           text='Restart'
