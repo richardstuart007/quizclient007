@@ -24,20 +24,21 @@ async function QuizSelectGetData({ qowner, qgroup1, qgroup2, MaxQuestions }) {
   const fetchItems = async () => {
     try {
       //
-      //  sqlString
+      //  sqlWhere
       //
-      let sqlString = `* from ${SQL_TABLE} where qowner = '${qowner}' and qgroup1 = '${qgroup1}' `
-      if (qgroup2) sqlString = sqlString.concat(` and qgroup2 = '${qgroup2}'`)
-      sqlString = sqlString.concat(` FETCH NEXT ${MaxQuestions} ROWS ONLY`)
-      if (g_log1) console.log('sqlString ', sqlString)
+      let sqlWhere = `qowner = '${qowner}' and qgroup1 = '${qgroup1}' `
+      if (qgroup2) sqlWhere = sqlWhere.concat(` and qgroup2 = '${qgroup2}'`)
+      sqlWhere = sqlWhere.concat(` FETCH NEXT ${MaxQuestions} ROWS ONLY`)
+      if (g_log1) console.log('sqlWhere ', sqlWhere)
       //
       //  Setup actions
       //
       const method = 'post'
       const body = {
         sqlClient: sqlClient,
-        sqlAction: 'SELECTSQL',
-        sqlString: sqlString
+        sqlTable: SQL_TABLE,
+        sqlAction: 'SELECT',
+        sqlWhere: sqlWhere
       }
       const URL = URL_BASE + URL_QUESTIONS
       if (g_log1) console.log('URL ', URL)
