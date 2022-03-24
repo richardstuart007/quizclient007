@@ -4,7 +4,8 @@ export const getGroup1Collection = () => [
   { id: 'redoubles', title: 'redoubles' },
   { id: '1NT', title: '1NT' },
   { id: 'doubles', title: 'doubles' },
-  { id: 'Carol & Richard', title: 'Carol & Richard' }
+  { id: 'Carol & Richard', title: 'Carol & Richard' },
+  { id: 'WBF', title: 'WBF' }
 ]
 
 export const getGroup2Collection = () => [
