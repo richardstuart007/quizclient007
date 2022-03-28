@@ -5,7 +5,7 @@ exports.QUESTIONS_DATA = [
     qkey: '1NT01',
     qtitle: null,
     qdetail:
-      'After the following biddding.   AKJx, AQxxx, Kx xx what is the opening bid, what is your rebid ?',
+      'After the following biddding.   AKJx, AQxxx, Kx xx what is the opening bid ?  Think about your rebid.',
     qanswer_correct: '1H',
     qanswer_bad1: '1NT',
     qanswer_bad2: '1S',
@@ -21,7 +21,7 @@ exports.QUESTIONS_DATA = [
     qkey: '1NT02',
     qtitle: null,
     qdetail:
-      'After the following biddding.   AKx, AQxxx, KJx xx what is the opening bid, what is your rebid ?',
+      'After the following biddding.   AKx, AQxxx, KJx xx what is the opening bid ?  Think about your rebid.',
     qanswer_correct: '1NT',
     qanswer_bad1: '1H',
     qanswer_bad2: '1D',
@@ -562,7 +562,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 38,
+    qid: 37,
     qowner: 'public',
     qkey: '1NT46',
     qtitle: null,
@@ -579,7 +579,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 39,
+    qid: 38,
     qowner: 'public',
     qkey: '1NT47',
     qtitle: null,
@@ -595,7 +595,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 40,
+    qid: 39,
     qowner: 'public',
     qkey: '1NT48',
     qtitle: null,
@@ -611,7 +611,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 41,
+    qid: 40,
     qowner: 'public',
     qkey: '1NT49',
     qtitle: null,
@@ -627,7 +627,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 42,
+    qid: 41,
     qowner: 'public',
     qkey: '1NT50',
     qtitle: null,
@@ -643,7 +643,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 43,
+    qid: 42,
     qowner: 'public',
     qkey: '1NT51',
     qtitle: null,
@@ -659,7 +659,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 44,
+    qid: 43,
     qowner: 'public',
     qkey: '1NT52',
     qtitle: null,
@@ -675,7 +675,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 45,
+    qid: 44,
     qowner: 'public',
     qkey: '1NT53',
     qtitle: null,
@@ -691,7 +691,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 46,
+    qid: 45,
     qowner: 'public',
     qkey: '1NT54',
     qtitle: null,
@@ -707,7 +707,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 47,
+    qid: 46,
     qowner: 'public',
     qkey: '1NT55',
     qtitle: null,
@@ -723,7 +723,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 48,
+    qid: 47,
     qowner: 'public',
     qkey: '1NT56',
     qtitle: null,
@@ -738,7 +738,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 49,
+    qid: 48,
     qowner: 'public',
     qkey: '1NT57',
     qtitle: null,
@@ -753,7 +753,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 50,
+    qid: 49,
     qowner: 'public',
     qkey: '1NT58',
     qtitle: null,
@@ -768,7 +768,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 51,
+    qid: 50,
     qowner: 'public',
     qkey: '1NT59',
     qtitle: null,
@@ -783,7 +783,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 52,
+    qid: 51,
     qowner: 'public',
     qkey: '1NT60',
     qtitle: null,
@@ -799,7 +799,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 53,
+    qid: 52,
     qowner: 'public',
     qkey: '1NT61',
     qtitle: null,
@@ -814,7 +814,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 54,
+    qid: 53,
     qowner: 'public',
     qkey: '1NT62',
     qtitle: null,
@@ -829,7 +829,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 55,
+    qid: 54,
     qowner: 'public',
     qkey: '1NT63',
     qtitle: null,
@@ -844,7 +844,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 56,
+    qid: 55,
     qowner: 'public',
     qkey: '1NT64',
     qtitle: null,
@@ -859,7 +859,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 57,
+    qid: 56,
     qowner: 'public',
     qkey: '1NT65',
     qtitle: null,
@@ -875,7 +875,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 58,
+    qid: 57,
     qowner: 'public',
     qkey: '1NT66',
     qtitle: null,
@@ -891,7 +891,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 59,
+    qid: 58,
     qowner: 'public',
     qkey: '1NT67',
     qtitle: null,
@@ -907,7 +907,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 60,
+    qid: 59,
     qowner: 'public',
     qkey: '1NT68',
     qtitle: null,
@@ -923,7 +923,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 61,
+    qid: 60,
     qowner: 'public',
     qkey: '1NT69',
     qtitle: null,
@@ -939,7 +939,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 62,
+    qid: 61,
     qowner: 'public',
     qkey: '1NT70',
     qtitle: null,
@@ -955,7 +955,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 63,
+    qid: 62,
     qowner: 'public',
     qkey: '1NT71',
     qtitle: null,
@@ -971,7 +971,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 64,
+    qid: 63,
     qowner: 'public',
     qkey: '1NT72',
     qtitle: null,
@@ -987,7 +987,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 65,
+    qid: 64,
     qowner: 'public',
     qkey: '1NT73',
     qtitle: null,
@@ -1003,7 +1003,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 66,
+    qid: 65,
     qowner: 'public',
     qkey: '1NT74',
     qtitle: null,
@@ -1019,7 +1019,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 67,
+    qid: 66,
     qowner: 'public',
     qkey: '1NT75',
     qtitle: null,
@@ -1036,7 +1036,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 68,
+    qid: 67,
     qowner: 'public',
     qkey: '1NT76',
     qtitle: null,
@@ -1052,7 +1052,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 69,
+    qid: 68,
     qowner: 'public',
     qkey: '1NT77',
     qtitle: null,
@@ -1068,7 +1068,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 70,
+    qid: 69,
     qowner: 'public',
     qkey: '1NT78',
     qtitle: null,
@@ -1084,7 +1084,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 71,
+    qid: 70,
     qowner: 'public',
     qkey: '1NT79',
     qtitle: null,
@@ -1100,7 +1100,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 72,
+    qid: 71,
     qowner: 'public',
     qkey: '1NT80',
     qtitle: null,
@@ -1116,7 +1116,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 73,
+    qid: 72,
     qowner: 'public',
     qkey: '1NT81',
     qtitle: null,
@@ -1132,7 +1132,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 74,
+    qid: 73,
     qowner: 'public',
     qkey: 'Double01',
     qtitle: null,
@@ -1148,7 +1148,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 75,
+    qid: 74,
     qowner: 'public',
     qkey: 'Double02',
     qtitle: null,
@@ -1164,7 +1164,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 76,
+    qid: 75,
     qowner: 'public',
     qkey: 'Double03',
     qtitle: null,
@@ -1180,7 +1180,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 77,
+    qid: 76,
     qowner: 'public',
     qkey: 'Double04',
     qtitle: null,
@@ -1196,7 +1196,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 78,
+    qid: 77,
     qowner: 'public',
     qkey: 'Double05',
     qtitle: null,
@@ -1212,7 +1212,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 79,
+    qid: 78,
     qowner: 'public',
     qkey: 'Double06',
     qtitle: null,
@@ -1228,7 +1228,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 80,
+    qid: 79,
     qowner: 'public',
     qkey: 'Double07',
     qtitle: null,
@@ -1244,7 +1244,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 81,
+    qid: 80,
     qowner: 'public',
     qkey: 'Double08',
     qtitle: null,
@@ -1260,7 +1260,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 82,
+    qid: 81,
     qowner: 'public',
     qkey: 'Double09',
     qtitle: null,
@@ -1276,7 +1276,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 83,
+    qid: 82,
     qowner: 'public',
     qkey: 'Double10',
     qtitle: null,
@@ -1292,7 +1292,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 84,
+    qid: 83,
     qowner: 'public',
     qkey: 'Double11',
     qtitle: null,
@@ -1308,7 +1308,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 85,
+    qid: 84,
     qowner: 'public',
     qkey: 'Double12',
     qtitle: null,
@@ -1324,7 +1324,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 86,
+    qid: 85,
     qowner: 'public',
     qkey: 'Double13',
     qtitle: null,
@@ -1340,7 +1340,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 87,
+    qid: 86,
     qowner: 'public',
     qkey: 'Double14',
     qtitle: null,
@@ -1356,7 +1356,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 88,
+    qid: 87,
     qowner: 'public',
     qkey: 'Double15',
     qtitle: null,
@@ -1372,7 +1372,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 89,
+    qid: 88,
     qowner: 'public',
     qkey: 'Double16',
     qtitle: null,
@@ -1388,7 +1388,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 90,
+    qid: 89,
     qowner: 'public',
     qkey: 'Double17',
     qtitle: null,
@@ -1404,7 +1404,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 91,
+    qid: 90,
     qowner: 'public',
     qkey: 'Double18',
     qtitle: null,
@@ -1420,7 +1420,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 92,
+    qid: 91,
     qowner: 'public',
     qkey: 'Double19',
     qtitle: null,
@@ -1436,7 +1436,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 93,
+    qid: 92,
     qowner: 'public',
     qkey: 'Double20',
     qtitle: null,
@@ -1452,7 +1452,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 94,
+    qid: 93,
     qowner: 'public',
     qkey: 'Double21',
     qtitle: null,
@@ -1468,7 +1468,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 95,
+    qid: 94,
     qowner: 'public',
     qkey: 'Double22',
     qtitle: null,
@@ -1484,7 +1484,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 96,
+    qid: 95,
     qowner: 'public',
     qkey: 'Double23',
     qtitle: null,
@@ -1500,7 +1500,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 97,
+    qid: 96,
     qowner: 'public',
     qkey: 'Double24',
     qtitle: null,
@@ -1517,7 +1517,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 98,
+    qid: 97,
     qowner: 'public',
     qkey: 'Double25',
     qtitle: null,
@@ -1534,7 +1534,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 154,
+    qid: 153,
     qowner: 'public',
     qkey: 'PS12',
     qtitle: 'Points Schmoints',
@@ -1549,7 +1549,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 99,
+    qid: 98,
     qowner: 'public',
     qkey: 'Double26',
     qtitle: null,
@@ -1566,7 +1566,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 100,
+    qid: 99,
     qowner: 'public',
     qkey: 'Double27',
     qtitle: null,
@@ -1583,7 +1583,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 101,
+    qid: 100,
     qowner: 'public',
     qkey: 'Double28',
     qtitle: null,
@@ -1600,7 +1600,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 102,
+    qid: 101,
     qowner: 'public',
     qkey: 'Double29',
     qtitle: null,
@@ -1617,7 +1617,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 103,
+    qid: 102,
     qowner: 'public',
     qkey: 'Double30',
     qtitle: null,
@@ -1634,7 +1634,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 104,
+    qid: 103,
     qowner: 'public',
     qkey: 'Double31',
     qtitle: null,
@@ -1649,7 +1649,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 105,
+    qid: 104,
     qowner: 'public',
     qkey: 'Double32',
     qtitle: null,
@@ -1666,7 +1666,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 106,
+    qid: 105,
     qowner: 'public',
     qkey: 'Double33',
     qtitle: null,
@@ -1682,7 +1682,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 107,
+    qid: 106,
     qowner: 'public',
     qkey: 'Double34',
     qtitle: null,
@@ -1697,7 +1697,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 108,
+    qid: 107,
     qowner: 'public',
     qkey: 'Double35',
     qtitle: null,
@@ -1713,7 +1713,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 109,
+    qid: 108,
     qowner: 'public',
     qkey: 'Double36',
     qtitle: null,
@@ -1729,7 +1729,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 110,
+    qid: 109,
     qowner: 'public',
     qkey: 'Double37',
     qtitle: null,
@@ -1745,7 +1745,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 111,
+    qid: 110,
     qowner: 'public',
     qkey: 'Double38',
     qtitle: null,
@@ -1761,7 +1761,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 112,
+    qid: 111,
     qowner: 'public',
     qkey: 'Double39',
     qtitle: null,
@@ -1777,7 +1777,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 113,
+    qid: 112,
     qowner: 'public',
     qkey: 'Double40',
     qtitle: null,
@@ -1793,7 +1793,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 114,
+    qid: 113,
     qowner: 'public',
     qkey: 'Double41',
     qtitle: null,
@@ -1809,7 +1809,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 115,
+    qid: 114,
     qowner: 'public',
     qkey: 'Double51',
     qtitle: null,
@@ -1825,7 +1825,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 116,
+    qid: 115,
     qowner: 'public',
     qkey: 'Double52',
     qtitle: null,
@@ -1841,7 +1841,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 117,
+    qid: 116,
     qowner: 'public',
     qkey: 'Double53',
     qtitle: null,
@@ -1857,7 +1857,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 118,
+    qid: 117,
     qowner: 'public',
     qkey: 'Double54',
     qtitle: null,
@@ -1873,7 +1873,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 119,
+    qid: 118,
     qowner: 'public',
     qkey: 'Double55',
     qtitle: null,
@@ -1891,7 +1891,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 120,
+    qid: 119,
     qowner: 'public',
     qkey: 'Double56',
     qtitle: null,
@@ -1908,7 +1908,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 121,
+    qid: 120,
     qowner: 'public',
     qkey: 'Double57',
     qtitle: null,
@@ -1926,7 +1926,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 122,
+    qid: 121,
     qowner: 'public',
     qkey: 'Double58',
     qtitle: null,
@@ -1944,7 +1944,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 123,
+    qid: 122,
     qowner: 'public',
     qkey: 'Double59',
     qtitle: null,
@@ -1961,7 +1961,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 124,
+    qid: 123,
     qowner: 'public',
     qkey: 'Double62',
     qtitle: null,
@@ -1979,7 +1979,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 125,
+    qid: 124,
     qowner: 'public',
     qkey: 'Double63',
     qtitle: null,
@@ -1997,7 +1997,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 126,
+    qid: 125,
     qowner: 'public',
     qkey: 'Double64',
     qtitle: null,
@@ -2017,7 +2017,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 127,
+    qid: 126,
     qowner: 'public',
     qkey: 'Redouble01',
     qtitle: 'Peter Hollands',
@@ -2034,7 +2034,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 128,
+    qid: 127,
     qowner: 'public',
     qkey: 'Redouble02',
     qtitle: 'Peter Hollands',
@@ -2051,7 +2051,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 129,
+    qid: 128,
     qowner: 'public',
     qkey: 'Redouble03',
     qtitle: 'Peter Hollands',
@@ -2068,7 +2068,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 130,
+    qid: 129,
     qowner: 'public',
     qkey: 'Redouble04',
     qtitle: 'Peter Hollands',
@@ -2085,7 +2085,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 131,
+    qid: 130,
     qowner: 'public',
     qkey: 'Redouble05',
     qtitle: 'Peter Hollands',
@@ -2101,7 +2101,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 132,
+    qid: 131,
     qowner: 'public',
     qkey: 'Redouble06',
     qtitle: 'Peter Hollands',
@@ -2117,10 +2117,10 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 133,
+    qid: 132,
     qowner: 'public',
     qkey: 'Redouble07',
-    qtitle: null,
+    qtitle: 'Peter Hollands',
     qdetail:
       'After the following biddding.   4S  X  XX.  What does this bidding sequence mean ?',
     qanswer_correct: 'PENALTY, To play, subsequent doubles penalty',
@@ -2133,10 +2133,10 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 134,
+    qid: 133,
     qowner: 'public',
     qkey: 'Redouble08',
-    qtitle: null,
+    qtitle: 'Peter Hollands',
     qdetail:
       'After the following biddding.   2S  X  XX.  What does this bidding sequence mean ?',
     qanswer_correct: 'PENALTY, To play, subsequent doubles penalty',
@@ -2149,10 +2149,10 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 135,
+    qid: 134,
     qowner: 'public',
     qkey: 'Redouble09',
-    qtitle: null,
+    qtitle: 'Peter Hollands',
     qdetail:
       'After the following biddding.   2S  X  2NT  3H,   P  P  X.  What does this bidding sequence mean ?',
     qanswer_correct: 'PENALTY, To play, subsequent doubles penalty',
@@ -2165,10 +2165,10 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 136,
+    qid: 135,
     qowner: 'public',
     qkey: 'Redouble10',
-    qtitle: null,
+    qtitle: 'Peter Hollands',
     qdetail:
       'After the following biddding.   2S  X  XX  3C,  X.  What does this bidding sequence mean ?',
     qanswer_correct: 'PENALTY, To play, subsequent doubles penalty',
@@ -2181,10 +2181,10 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 137,
+    qid: 136,
     qowner: 'public',
     qkey: 'Redouble11',
-    qtitle: null,
+    qtitle: 'Peter Hollands',
     qdetail:
       'After the following biddding.   2S  X  XX  3C, Pass.  What does this bidding sequence mean ?',
     qanswer_correct: "CAN'T PENALTY.  Opener has no defensive tricks.",
@@ -2197,10 +2197,10 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 138,
+    qid: 137,
     qowner: 'public',
     qkey: 'Redouble12',
-    qtitle: null,
+    qtitle: 'Peter Hollands',
     qdetail:
       'After the following biddding.   2S  X  XX  3H,  P  P  X.  What does this bidding sequence mean ?',
     qanswer_correct: 'PENALTY.  Responder has values to defeat contract',
@@ -2213,10 +2213,10 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 139,
+    qid: 138,
     qowner: 'public',
     qkey: 'Redouble13',
-    qtitle: null,
+    qtitle: 'Peter Hollands',
     qdetail:
       'After the following biddding.   1NT  P  2C  X,  XX.  What does this bidding sequence mean ?',
     qanswer_correct: 'TO PLAY in 2C',
@@ -2230,10 +2230,10 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 140,
+    qid: 139,
     qowner: 'public',
     qkey: 'Redouble14',
-    qtitle: null,
+    qtitle: 'Peter Hollands',
     qdetail:
       'We are looking to bid 3NT with a cue bid of their suit at the 3 level as a stopper ask.  They double and we redouble.  For 3X  X  XX.  What does this bidding sequence mean ?',
     qanswer_correct: 'I have a partial stopper',
@@ -2246,10 +2246,10 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 141,
+    qid: 140,
     qowner: 'public',
     qkey: 'Redouble15',
-    qtitle: null,
+    qtitle: 'Peter Hollands',
     qdetail:
       'We are looking to bid 3NT with a cue bid of their suit at the 3 level as a stopper ask.  They double and we bid 3NT..  What does this bidding sequence mean ?',
     qanswer_correct: 'I have a 1+ stoppers',
@@ -2262,10 +2262,10 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 142,
+    qid: 141,
     qowner: 'public',
     qkey: 'Redouble16',
-    qtitle: null,
+    qtitle: 'Peter Hollands',
     qdetail:
       '1H  P  3D  P,  3S  X  P  P,  XX.  What does this bidding sequence mean ?',
     qanswer_correct: 'First round control in Spades, Ace/Void in bid suit',
@@ -2278,7 +2278,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 143,
+    qid: 142,
     qowner: 'public',
     qkey: 'PS01',
     qtitle: 'Points Schmoints',
@@ -2293,7 +2293,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 144,
+    qid: 143,
     qowner: 'public',
     qkey: 'PS02',
     qtitle: 'Points Schmoints',
@@ -2308,7 +2308,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 145,
+    qid: 144,
     qowner: 'public',
     qkey: 'PS03',
     qtitle: 'Points Schmoints',
@@ -2323,7 +2323,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 146,
+    qid: 145,
     qowner: 'public',
     qkey: 'PS04',
     qtitle: 'Points Schmoints',
@@ -2339,7 +2339,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 147,
+    qid: 146,
     qowner: 'public',
     qkey: 'PS05',
     qtitle: 'Points Schmoints',
@@ -2355,7 +2355,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 148,
+    qid: 147,
     qowner: 'public',
     qkey: 'PS06',
     qtitle: 'Points Schmoints',
@@ -2370,7 +2370,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 149,
+    qid: 148,
     qowner: 'public',
     qkey: 'PS07',
     qtitle: 'Points Schmoints',
@@ -2385,7 +2385,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 150,
+    qid: 149,
     qowner: 'public',
     qkey: 'PS08',
     qtitle: 'Points Schmoints',
@@ -2400,7 +2400,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 151,
+    qid: 150,
     qowner: 'public',
     qkey: 'PS09',
     qtitle: 'Points Schmoints',
@@ -2415,7 +2415,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 152,
+    qid: 151,
     qowner: 'public',
     qkey: 'PS10',
     qtitle: 'Points Schmoints',
@@ -2430,7 +2430,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 153,
+    qid: 152,
     qowner: 'public',
     qkey: 'PS11',
     qtitle: 'Points Schmoints',
@@ -2445,7 +2445,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 155,
+    qid: 154,
     qowner: 'public',
     qkey: 'PS13',
     qtitle: 'Points Schmoints',
@@ -2460,7 +2460,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 156,
+    qid: 155,
     qowner: 'public',
     qkey: 'PS14',
     qtitle: 'Points Schmoints',
@@ -2475,7 +2475,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 157,
+    qid: 156,
     qowner: 'public',
     qkey: 'PS15',
     qtitle: 'Points Schmoints',
@@ -2490,7 +2490,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 158,
+    qid: 157,
     qowner: 'public',
     qkey: 'PS16',
     qtitle: 'Points Schmoints',
@@ -2506,7 +2506,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 159,
+    qid: 158,
     qowner: 'public',
     qkey: 'PS17',
     qtitle: 'Points Schmoints',
@@ -2522,7 +2522,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 160,
+    qid: 159,
     qowner: 'public',
     qkey: 'PS18',
     qtitle: 'Points Schmoints',
@@ -2538,7 +2538,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 161,
+    qid: 160,
     qowner: 'public',
     qkey: 'PS19',
     qtitle: 'Points Schmoints',
@@ -2554,10 +2554,10 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 162,
-    qowner: 'public',
+    qid: 161,
+    qowner: 'Richard',
     qkey: 'System01',
-    qtitle: 'Carol & Richard',
+    qtitle: 'Carol',
     qdetail:
       'After the following biddding.   2NT 3S.  What does this bidding sequence mean ?',
     qanswer_correct: 'Responser has 5 spades and 4 hearts',
@@ -2566,14 +2566,14 @@ exports.QUESTIONS_DATA = [
     qanswer_bad3: null,
     qhyperlink1: null,
     qhyperlink2: null,
-    qgroup1: 'Carol & Richard',
+    qgroup1: 'Carol',
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 163,
-    qowner: 'public',
+    qid: 162,
+    qowner: 'Richard',
     qkey: 'System02',
-    qtitle: 'Carol & Richard',
+    qtitle: 'Carol',
     qdetail:
       'After the following biddding.   1C  P  2D.  What does this bidding sequence mean ?',
     qanswer_correct: 'Drop dead.  6 card suit, weak',
@@ -2582,14 +2582,14 @@ exports.QUESTIONS_DATA = [
     qanswer_bad3: null,
     qhyperlink1: null,
     qhyperlink2: null,
-    qgroup1: 'Carol & Richard',
+    qgroup1: 'Carol',
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 164,
-    qowner: 'public',
+    qid: 163,
+    qowner: 'Richard',
     qkey: 'System03',
-    qtitle: 'Carol & Richard',
+    qtitle: 'Carol',
     qdetail:
       'After the following biddding.   1C 1D 2H.  What does this bidding sequence mean ?',
     qanswer_correct: 'Drop dead.  6 card suit, weak',
@@ -2598,14 +2598,14 @@ exports.QUESTIONS_DATA = [
     qanswer_bad3: null,
     qhyperlink1: null,
     qhyperlink2: null,
-    qgroup1: 'Carol & Richard',
+    qgroup1: 'Carol',
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 165,
-    qowner: 'public',
+    qid: 164,
+    qowner: 'Richard',
     qkey: 'System04',
-    qtitle: 'Carol & Richard',
+    qtitle: 'Carol',
     qdetail:
       'After the following biddding.   1C  X  2S.  What does this bidding sequence mean ?',
     qanswer_correct: 'Drop dead.  6 card suit, weak',
@@ -2614,14 +2614,14 @@ exports.QUESTIONS_DATA = [
     qanswer_bad3: null,
     qhyperlink1: null,
     qhyperlink2: null,
-    qgroup1: 'Carol & Richard',
+    qgroup1: 'Carol',
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 166,
-    qowner: 'public',
+    qid: 165,
+    qowner: 'Richard',
     qkey: 'System05',
-    qtitle: 'Carol & Richard',
+    qtitle: 'Carol',
     qdetail:
       'After the following biddding.   1D  1S  2H.  What does this bidding sequence mean ?',
     qanswer_correct: '5 card suit and 10+ points',
@@ -2630,14 +2630,14 @@ exports.QUESTIONS_DATA = [
     qanswer_bad3: null,
     qhyperlink1: null,
     qhyperlink2: null,
-    qgroup1: 'Carol & Richard',
+    qgroup1: 'Carol',
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 167,
-    qowner: 'public',
+    qid: 166,
+    qowner: 'Richard',
     qkey: 'System06',
-    qtitle: 'Carol & Richard',
+    qtitle: 'Carol',
     qdetail:
       'After the following biddding.   1D  X  2D.  What does this bidding sequence mean ?',
     qanswer_correct: 'Inverted Minors, Game force',
@@ -2646,14 +2646,14 @@ exports.QUESTIONS_DATA = [
     qanswer_bad3: null,
     qhyperlink1: 'https://www.larryco.com/bridge-articles/inverted-minors',
     qhyperlink2: null,
-    qgroup1: 'Carol & Richard',
+    qgroup1: 'Carol',
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 168,
-    qowner: 'public',
+    qid: 167,
+    qowner: 'Richard',
     qkey: 'System07',
-    qtitle: 'Carol & Richard',
+    qtitle: 'Carol',
     qdetail:
       'After the following biddding.   1D  X  3D.  What does this bidding sequence mean ?',
     qanswer_correct: 'Inverted Minors, Weak, 5 Diamonds',
@@ -2662,14 +2662,14 @@ exports.QUESTIONS_DATA = [
     qanswer_bad3: null,
     qhyperlink1: 'https://www.larryco.com/bridge-articles/inverted-minors',
     qhyperlink2: null,
-    qgroup1: 'Carol & Richard',
+    qgroup1: 'Carol',
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 169,
-    qowner: 'public',
+    qid: 168,
+    qowner: 'Richard',
     qkey: 'System08',
-    qtitle: 'Carol & Richard',
+    qtitle: 'Carol',
     qdetail:
       'After the following biddding.   1C  P  2C.  What does this bidding sequence mean ?',
     qanswer_correct: 'Inverted Minors, Game force',
@@ -2678,14 +2678,14 @@ exports.QUESTIONS_DATA = [
     qanswer_bad3: null,
     qhyperlink1: 'https://www.larryco.com/bridge-articles/inverted-minors',
     qhyperlink2: null,
-    qgroup1: 'Carol & Richard',
+    qgroup1: 'Carol',
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 170,
-    qowner: 'public',
+    qid: 169,
+    qowner: 'Richard',
     qkey: 'System09',
-    qtitle: 'Carol & Richard',
+    qtitle: 'Carol',
     qdetail:
       'After the following biddding.   1C  P  3C.  What does this bidding sequence mean ?',
     qanswer_correct: 'Inverted Minors, Weak, 6 Clubs',
@@ -2694,14 +2694,14 @@ exports.QUESTIONS_DATA = [
     qanswer_bad3: null,
     qhyperlink1: 'https://www.larryco.com/bridge-articles/inverted-minors',
     qhyperlink2: null,
-    qgroup1: 'Carol & Richard',
+    qgroup1: 'Carol',
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 171,
-    qowner: 'public',
+    qid: 170,
+    qowner: 'Richard',
     qkey: 'System10',
-    qtitle: 'Carol & Richard',
+    qtitle: 'Carol',
     qdetail:
       'After the following biddding.   1H  P  2S.  What does this bidding sequence mean ?',
     qanswer_correct: 'Bergen Raise.  3 Hearts 10-11 HCP',
@@ -2710,14 +2710,14 @@ exports.QUESTIONS_DATA = [
     qanswer_bad3: null,
     qhyperlink1: null,
     qhyperlink2: null,
-    qgroup1: 'Carol & Richard',
+    qgroup1: 'Carol',
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 172,
-    qowner: 'public',
+    qid: 171,
+    qowner: 'Richard',
     qkey: 'System11',
-    qtitle: 'Carol & Richard',
+    qtitle: 'Carol',
     qdetail:
       'After the following biddding.   1S  P  3H.  What does this bidding sequence mean ?',
     qanswer_correct: 'Bergen Raise.  3 Spades 10-11 HCP',
@@ -2726,14 +2726,14 @@ exports.QUESTIONS_DATA = [
     qanswer_bad3: null,
     qhyperlink1: null,
     qhyperlink2: null,
-    qgroup1: 'Carol & Richard',
+    qgroup1: 'Carol',
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 173,
-    qowner: 'public',
+    qid: 172,
+    qowner: 'Richard',
     qkey: 'System12',
-    qtitle: 'Carol & Richard',
+    qtitle: 'Carol',
     qdetail:
       'After the following biddding.   1S  P  4H.  What does this bidding sequence mean ?',
     qanswer_correct: 'Splinter, Agreeing Spades as trumps, 11 -14 HCP',
@@ -2742,14 +2742,14 @@ exports.QUESTIONS_DATA = [
     qanswer_bad3: null,
     qhyperlink1: null,
     qhyperlink2: null,
-    qgroup1: 'Carol & Richard',
+    qgroup1: 'Carol',
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 174,
-    qowner: 'public',
+    qid: 173,
+    qowner: 'Richard',
     qkey: 'System13',
-    qtitle: 'Carol & Richard',
+    qtitle: 'Carol',
     qdetail:
       'After the following biddding.   1H  P  3S.  What does this bidding sequence mean ?',
     qanswer_correct: 'Splinter, Agreeing Spades as trumps, 11 -14 HCP',
@@ -2758,14 +2758,14 @@ exports.QUESTIONS_DATA = [
     qanswer_bad3: null,
     qhyperlink1: null,
     qhyperlink2: null,
-    qgroup1: 'Carol & Richard',
+    qgroup1: 'Carol',
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 175,
-    qowner: 'public',
+    qid: 174,
+    qowner: 'Richard',
     qkey: 'System14',
-    qtitle: 'Carol & Richard',
+    qtitle: 'Carol',
     qdetail:
       'After the following biddding.   1S  X  2S.  What does this bidding sequence mean ?',
     qanswer_correct: 'Simple raise, can be pre-emptive 3-9 HCP',
@@ -2774,14 +2774,14 @@ exports.QUESTIONS_DATA = [
     qanswer_bad3: null,
     qhyperlink1: null,
     qhyperlink2: null,
-    qgroup1: 'Carol & Richard',
+    qgroup1: 'Carol',
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 176,
-    qowner: 'public',
+    qid: 175,
+    qowner: 'Richard',
     qkey: 'System15',
-    qtitle: 'Carol & Richard',
+    qtitle: 'Carol',
     qdetail:
       'After the following biddding.   1S  P  2S.  What does this bidding sequence mean ?',
     qanswer_correct: 'Bergen Raise.  3 Spades 6-9 HCP',
@@ -2790,14 +2790,14 @@ exports.QUESTIONS_DATA = [
     qanswer_bad3: null,
     qhyperlink1: null,
     qhyperlink2: null,
-    qgroup1: 'Carol & Richard',
+    qgroup1: 'Carol',
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 177,
-    qowner: 'public',
+    qid: 176,
+    qowner: 'Richard',
     qkey: 'System16',
-    qtitle: 'Carol & Richard',
+    qtitle: 'Carol',
     qdetail:
       'After the following biddding.   1H  P  3C  X,  3D.  What does this bidding sequence mean ?',
     qanswer_correct: 'Partner to signoff if Min, or bid game if Max',
@@ -2806,14 +2806,14 @@ exports.QUESTIONS_DATA = [
     qanswer_bad3: null,
     qhyperlink1: null,
     qhyperlink2: null,
-    qgroup1: 'Carol & Richard',
+    qgroup1: 'Carol',
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 178,
-    qowner: 'public',
+    qid: 177,
+    qowner: 'Richard',
     qkey: 'System17',
-    qtitle: 'Carol & Richard',
+    qtitle: 'Carol',
     qdetail:
       'After the following biddding.   1H  P  3D.  What does this bidding sequence mean ?',
     qanswer_correct: 'Bergen raise showing 4 card fit and 10-11 HCP',
@@ -2822,14 +2822,14 @@ exports.QUESTIONS_DATA = [
     qanswer_bad3: null,
     qhyperlink1: null,
     qhyperlink2: null,
-    qgroup1: 'Carol & Richard',
+    qgroup1: 'Carol',
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 179,
-    qowner: 'public',
+    qid: 178,
+    qowner: 'Richard',
     qkey: 'System18',
-    qtitle: 'Carol & Richard',
+    qtitle: 'Carol',
     qdetail:
       'After the following biddding.   2D (Non Vul)   P  2NT, with 6 points and good HEARTS what do you bid ?',
     qanswer_correct: '3S ',
@@ -2838,14 +2838,14 @@ exports.QUESTIONS_DATA = [
     qanswer_bad3: null,
     qhyperlink1: null,
     qhyperlink2: null,
-    qgroup1: 'Carol & Richard',
+    qgroup1: 'Carol',
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 180,
-    qowner: 'public',
+    qid: 179,
+    qowner: 'Richard',
     qkey: 'System19',
-    qtitle: 'Carol & Richard',
+    qtitle: 'Carol',
     qdetail:
       'After the following biddding.   2D (Non Vul)   P  2NT, with 4 points and weak HEARTS what do you bid ?',
     qanswer_correct: '3D',
@@ -2854,14 +2854,14 @@ exports.QUESTIONS_DATA = [
     qanswer_bad3: null,
     qhyperlink1: null,
     qhyperlink2: null,
-    qgroup1: 'Carol & Richard',
+    qgroup1: 'Carol',
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 181,
-    qowner: 'public',
+    qid: 180,
+    qowner: 'Richard',
     qkey: 'System20',
-    qtitle: 'Carol & Richard',
+    qtitle: 'Carol',
     qdetail:
       'After the following biddding.   2D (Non Vul)   P  2NT, with 6 points and good SPADES what do you bid ?',
     qanswer_correct: '3NT',
@@ -2870,14 +2870,14 @@ exports.QUESTIONS_DATA = [
     qanswer_bad3: null,
     qhyperlink1: null,
     qhyperlink2: null,
-    qgroup1: 'Carol & Richard',
+    qgroup1: 'Carol',
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 182,
-    qowner: 'public',
+    qid: 181,
+    qowner: 'Richard',
     qkey: 'System21',
-    qtitle: 'Carol & Richard',
+    qtitle: 'Carol',
     qdetail:
       'After the following biddding.   2D (Non Vul)   P  2NT, with 4 points and weak SPADES what do you bid ?',
     qanswer_correct: '3H',
@@ -2886,14 +2886,14 @@ exports.QUESTIONS_DATA = [
     qanswer_bad3: null,
     qhyperlink1: null,
     qhyperlink2: null,
-    qgroup1: 'Carol & Richard',
+    qgroup1: 'Carol',
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 183,
-    qowner: 'public',
+    qid: 182,
+    qowner: 'Richard',
     qkey: 'System22',
-    qtitle: 'Carol & Richard',
+    qtitle: 'Carol',
     qdetail:
       'After the following biddding.   2D (Non Vul)   P  2H, with 6 points and good HEARTS what do you bid ?',
     qanswer_correct: 'Pass',
@@ -2902,14 +2902,14 @@ exports.QUESTIONS_DATA = [
     qanswer_bad3: null,
     qhyperlink1: null,
     qhyperlink2: null,
-    qgroup1: 'Carol & Richard',
+    qgroup1: 'Carol',
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 184,
-    qowner: 'public',
+    qid: 183,
+    qowner: 'Richard',
     qkey: 'System23',
-    qtitle: 'Carol & Richard',
+    qtitle: 'Carol',
     qdetail:
       'After the following biddding.   2D (Non Vul)   P  2H, with 6 points and good SPADES what do you bid ?',
     qanswer_correct: 'Pass',
@@ -2918,14 +2918,14 @@ exports.QUESTIONS_DATA = [
     qanswer_bad3: null,
     qhyperlink1: null,
     qhyperlink2: null,
-    qgroup1: 'Carol & Richard',
+    qgroup1: 'Carol',
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 185,
-    qowner: 'public',
+    qid: 184,
+    qowner: 'Richard',
     qkey: 'System24',
-    qtitle: 'Carol & Richard',
+    qtitle: 'Carol',
     qdetail:
       'After the following biddding.   2D (Non Vul)   P  2S, with 6 points and good HEARTS what do you bid ?',
     qanswer_correct: 'Pass',
@@ -2934,14 +2934,14 @@ exports.QUESTIONS_DATA = [
     qanswer_bad3: null,
     qhyperlink1: null,
     qhyperlink2: null,
-    qgroup1: 'Carol & Richard',
+    qgroup1: 'Carol',
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 186,
-    qowner: 'public',
+    qid: 185,
+    qowner: 'Richard',
     qkey: 'System25',
-    qtitle: 'Carol & Richard',
+    qtitle: 'Carol',
     qdetail:
       'After the following biddding.   2D (Non Vul)   P  3D, with 7 points and good HEARTS what do you bid ?',
     qanswer_correct: 'Pass',
@@ -2950,11 +2950,11 @@ exports.QUESTIONS_DATA = [
     qanswer_bad3: null,
     qhyperlink1: null,
     qhyperlink2: null,
-    qgroup1: 'Carol & Richard',
+    qgroup1: 'Carol',
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 187,
+    qid: 186,
     qowner: 'public',
     qkey: 'WBF01',
     qtitle: null,
@@ -2970,7 +2970,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 188,
+    qid: 187,
     qowner: 'public',
     qkey: 'WBF02',
     qtitle: null,
@@ -2986,7 +2986,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Play'
   },
   {
-    qid: 189,
+    qid: 188,
     qowner: 'public',
     qkey: 'WBF03',
     qtitle: null,
@@ -3002,7 +3002,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Play'
   },
   {
-    qid: 190,
+    qid: 189,
     qowner: 'public',
     qkey: 'WBF04',
     qtitle: null,
@@ -3018,7 +3018,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Play'
   },
   {
-    qid: 191,
+    qid: 190,
     qowner: 'public',
     qkey: 'WBF05',
     qtitle: null,
@@ -3034,7 +3034,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Play'
   },
   {
-    qid: 192,
+    qid: 191,
     qowner: 'public',
     qkey: 'WBF06',
     qtitle: null,
@@ -3050,7 +3050,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 193,
+    qid: 192,
     qowner: 'public',
     qkey: 'WBF07',
     qtitle: null,
@@ -3066,7 +3066,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 194,
+    qid: 193,
     qowner: 'public',
     qkey: 'WBF08',
     qtitle: null,
@@ -3082,7 +3082,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Play'
   },
   {
-    qid: 195,
+    qid: 194,
     qowner: 'public',
     qkey: 'WBF09',
     qtitle: null,
@@ -3098,7 +3098,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Play'
   },
   {
-    qid: 196,
+    qid: 195,
     qowner: 'public',
     qkey: 'WBF10',
     qtitle: null,
@@ -3114,7 +3114,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 197,
+    qid: 196,
     qowner: 'public',
     qkey: 'WBF11',
     qtitle: null,
@@ -3130,7 +3130,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 198,
+    qid: 197,
     qowner: 'public',
     qkey: 'WBF12',
     qtitle: null,
@@ -3146,7 +3146,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 199,
+    qid: 198,
     qowner: 'public',
     qkey: 'WBF13',
     qtitle: null,
@@ -3162,7 +3162,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 200,
+    qid: 199,
     qowner: 'public',
     qkey: 'WBF14',
     qtitle: null,
@@ -3178,7 +3178,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 201,
+    qid: 200,
     qowner: 'public',
     qkey: 'WBF15',
     qtitle: null,
@@ -3194,7 +3194,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 202,
+    qid: 201,
     qowner: 'public',
     qkey: 'WBF16',
     qtitle: null,
@@ -3210,7 +3210,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 203,
+    qid: 202,
     qowner: 'public',
     qkey: 'WBF17',
     qtitle: null,
@@ -3226,7 +3226,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 204,
+    qid: 203,
     qowner: 'public',
     qkey: 'WBF18',
     qtitle: null,
@@ -3242,7 +3242,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 205,
+    qid: 204,
     qowner: 'public',
     qkey: 'WBF19',
     qtitle: null,
@@ -3258,7 +3258,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 206,
+    qid: 205,
     qowner: 'public',
     qkey: 'WBF20',
     qtitle: null,
@@ -3274,7 +3274,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 207,
+    qid: 206,
     qowner: 'public',
     qkey: 'WBF21',
     qtitle: null,
@@ -3290,7 +3290,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 208,
+    qid: 207,
     qowner: 'public',
     qkey: 'WBF22',
     qtitle: null,
@@ -3306,7 +3306,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 209,
+    qid: 208,
     qowner: 'public',
     qkey: 'WBF23',
     qtitle: null,
@@ -3322,7 +3322,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 210,
+    qid: 209,
     qowner: 'public',
     qkey: 'WBF24',
     qtitle: null,
@@ -3338,7 +3338,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 211,
+    qid: 210,
     qowner: 'public',
     qkey: 'WBF25',
     qtitle: null,
@@ -3354,7 +3354,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 212,
+    qid: 211,
     qowner: 'public',
     qkey: 'WBF26',
     qtitle: null,
@@ -3370,7 +3370,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 213,
+    qid: 212,
     qowner: 'public',
     qkey: 'WBF27',
     qtitle: null,
@@ -3386,7 +3386,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 214,
+    qid: 213,
     qowner: 'public',
     qkey: 'WBF28',
     qtitle: null,
@@ -3402,7 +3402,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 215,
+    qid: 214,
     qowner: 'public',
     qkey: 'WBF29',
     qtitle: null,
@@ -3418,7 +3418,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 216,
+    qid: 215,
     qowner: 'public',
     qkey: 'WBF30',
     qtitle: null,
@@ -3433,7 +3433,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 217,
+    qid: 216,
     qowner: 'public',
     qkey: 'WBF31',
     qtitle: null,
@@ -3448,7 +3448,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 218,
+    qid: 217,
     qowner: 'public',
     qkey: 'WBF32',
     qtitle: null,
@@ -3463,7 +3463,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 219,
+    qid: 218,
     qowner: 'public',
     qkey: 'WBF33',
     qtitle: null,
@@ -3478,7 +3478,7 @@ exports.QUESTIONS_DATA = [
     qgroup2: 'Bridge Bidding'
   },
   {
-    qid: 220,
+    qid: 219,
     qowner: 'public',
     qkey: 'WBF34',
     qtitle: null,

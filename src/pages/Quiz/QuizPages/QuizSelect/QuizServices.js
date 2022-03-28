@@ -1,14 +1,19 @@
-export const getOwnerCollection = () => [{ id: 'public', title: 'public' }]
+export const getOwnerCollection = () => [
+  { id: 'public', title: 'public' },
+  { id: 'Richard', title: 'Richard' }
+]
 
 export const getGroup1Collection = () => [
-  { id: 'redoubles', title: 'redoubles' },
+  { id: 'Redoubles', title: 'Redoubles' },
   { id: '1NT', title: '1NT' },
-  { id: 'doubles', title: 'doubles' },
-  { id: 'Carol & Richard', title: 'Carol & Richard' },
-  { id: 'WBF', title: 'WBF' }
+  { id: 'Doubles', title: 'Doubles' },
+  { id: 'Carol', title: 'Carol' },
+  { id: 'WBF', title: 'WBF' },
+  { id: 'Points Schmoints', title: 'Points Schmoints' }
 ]
 
 export const getGroup2Collection = () => [
   { id: '', title: 'none' },
-  { id: 'Bridge Bidding', title: 'Bridge Bidding' }
+  { id: 'Bidding', title: 'Bidding' },
+  { id: 'Play', title: 'Play' }
 ]
